@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type ="text/css" href="./stylesheet.css" >
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <script src="CD_otherMWStnsJava.js"></script>
+        <title>Current Years Data</title>
+    </head>
+
+    <body style="overflow-x:auto;">
+        <div id="header">
+        <h1>Current Data</h1>
+        <p> Current data with its extreme climatological conditions that can often contribute to increased wildfire risk</p>
+        
+        <div class="menu">                
+            <div class="dropdownMenu">
+                <button class="dropbtnMenu" >Current Data&nbsp 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-contentMenu">
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/">RMP Current Data</a>
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/CD_otherMWStns.html">Other Mesowest Stations</a>
+                </div>
+              </div> 
+            
+              <a href="http://home.chpc.utah.edu/~u1269218/RMP/KBDI_Index.html">KBDI Data</a>
+            
+            <div class="dropdownMenu">
+                <button class="dropbtnMenu">Climatology Record&nbsp
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-contentMenu">
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationClimatology.html">RMP Climatology Record</a>
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/SC_otherMWStns.html">Other Mesowest Stations</a>
+                </div>
+              </div> 
+            
+            <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationLocation.html">Station Information</a>
+
+        </div>
+    
+        </div>
+        <div id="navbar">
+            <p>Select the desired station, variable, and graph type and then click submit</p>
+
+            <div id="dropdown">
+                <form id="form"> 
+                    <select id="station">
+                        <option id="1" value="HERUT" selected="">(HERUT) Herriman City UT</option>
+                        <option id="2" value="MTMET" >(MTMET) U of U Mountain Met Lab</option>
+                        <option id="3" value="UTASG" >(UTASG) Aspen Grove</option>
+                        <option id="4" value="UTMFS" >(UTMFS) US-40 Mayflower Summit</option>
+                        <option id="5" value="UTPLC" >(UTPLC) Powerhouse - Little Cottonwood Canyon</option>
+                        <option id="6" value="UTPCY" >(UTPCY) Provo Canyon @ mp10</option>
+                        <option id="7" value="UTSTR" >(UTSTR) S-Turns - Big Cottonwood Canyon</option>
+                        <option id="8" value="UTSVC" >(UTSVC) I-80 @ Silver Ck Jct</option>
+                        <option id="9" value="UT9"   >(UT9) LAKE POINT I-80</option>
+                        <option id="10" value="PCPD" >(PCPD) Park City - Payday Top</option>
+                    </select>
+
+                    <select id="variable">
+                        <option id="27" selected="">Fosberg Fire Weather Index</option>
+                        <option id="28">Wind Speed</option>
+                        <option id="29">Wind Gust</option>
+                        <option id="30">Relative Humidity</option>
+                    </select>
+
+                    <select id="period">
+                        <option id="31" value="24Hrs"selected="">Last 24 Hours</option>
+                        <option id="31" value="Week">Previous Week</option>
+                        <option id="32" value="Month">Previous Month</option>
+                        <option id="32" value="sinceMay">Current Fire Season (since May 1)</option>
+                    </select>
+                    
+                </form> 
+            </div>
+
+            <button onclick = "findPageInfo()">  
+                Submit  
+            </button>
+            
+        </div>
+
+
+        <div class="main">
+            <p>
+                These summaries were derived from records archived by <a href="https://synopticdata.com/" style="color:grey" target="_blank">Synoptic Data PBC.</a>
+                While the entire state of Utah is prone to wildfires, many of these stations were selected due to their proximity to areas with higher risk.
+
+            </p>
+            <hr>
+            <p id="descripSpotCurrent">
+                
+                This graph shows the last 24Hrs of data from HERUT. This data comes from the 6-hr. running mean of the Fosberg Fire Weather Index (FFWI). 
+                The red data points highlight periods when the FFWI exceeded the threshold. 
+                The orange dashed line is the 95th percentile values observed near that time of year based on the available data record.
+ 
+            </p>
+            
+            <p id="imgSpot1"><img id="imageBorder" src="./scriptsAndData/pngFiles/extremePercentilePics/HERUT_2020_Extreme_FFWI_24Hrs.png"> </p>
+            <br>
+            <!--
+            <p id="descripSpotYear">
+                <hr><br>
+                This shows an overview of the current year Fosberg Fire Weather Index percentile trend. The percentile values are from the daily mean FFWI.
+            </p>
+            <p id="imgSpot"><img id="imageBorder" src="../scriptsAndData/pngFiles/yearlyPercentilePics/KSLC_2020_Percentile_FFWI.png"> </p>
+            
+            <br>
+            -->
+
+            <!------- This opens a virtual window so that we can get information from this window without having to do other things-->
+            <iframe id="iframe" src="http://home.chpc.utah.edu/~u1269218/RMP/stationLocation.html" style="display:none"></iframe>
+
+            <table id="smallTable">
+                <thead id="tableHeader">
+                    <td>Station Name</td> <td>Station ID</td> <td>Network Type</td> 
+                    <td>First Data Date</td> <td>Elevation (ft)</td>
+                </thead>
+                <!-- Spot for station info to show up -->
+                <tr id="tableSpot">
+                    <td>Herriman City UT</td> <td>HERUT</td> <td>UUNET</td>
+                    <td>2013-03-28</td> <td>5144</td>
+                </tr>
+            </table>
+            <br><br>
+        
+        </div>
+
+
+        <div id="footer">
+            <p>This page is maintained by James Powell @2020, <a href="https://atmos.utah.edu/" style="color: maroon;" target="_blank">Department of Atmospheric Sciences, University of Utah</a> <br>
+                For any question please contact me via my email<br>
+                 u1269218@utah.edu</p>
+        </div>
+
+    </body>
+</html>

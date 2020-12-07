@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type ="text/css" href="./stylesheet.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <script src="KBDIJava.js"></script>
+        <title>KBDI Data</title>
+    </head>
+
+    <body style="overflow-x:auto;">
+        <div id="header">
+        <h1>RMP KBDI Data</h1>
+        <p> Climatologies of Keetch Byram Drought Index that show forest fire potential</p>
+        
+        <div class="menu">                
+            <div class="dropdownMenu">
+                <button class="dropbtnMenu" >Current Data&nbsp 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-contentMenu">
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/">RMP Current Data</a>
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/CD_otherMWStns.html">Other Mesowest Stations</a>
+                </div>
+              </div> 
+            
+              <a href="http://home.chpc.utah.edu/~u1269218/RMP/KBDI_Index.html">KBDI Data</a>
+            
+            <div class="dropdownMenu">
+                <button class="dropbtnMenu">Climatology Record&nbsp
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-contentMenu">
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationClimatology.html">RMP Climatology Record</a>
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/SC_otherMWStns.html">Other Mesowest Stations</a>
+                </div>
+              </div> 
+            
+            <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationLocation.html">Station Information</a>
+
+        </div>
+    
+        </div>
+        <div id="navbar">
+            <p>Select the desired station and then click submit</p>
+
+            <div id="dropdown">
+                <form id="form"> 
+                    <select id="station">
+                        <option id="1"  value="KCDC" selected="">(KCDC) Cedar City Municipal Airport</option>
+                        <option id="2"  value="KSLC" >(KSLC) Salt Lake City International Airport</option> 
+                        <option id="9" value="PGRU1">(PGRU1) Pleasant Grove</option>
+                        <option id="12" value="LPRU1">(LPRU1) Lava Point RAWS</option>
+                        <option id="15" value="KHIF" >(KHIF) Hill Air Force Base</option>
+
+                    </select>
+                </form> 
+            </div>
+
+            <button onclick = "findPageInfo()">  
+                Submit  
+            </button>
+            
+        </div>
+
+
+        <div class="main">
+            <p>
+                These summaries were derived from records archived by <a href="https://synopticdata.com/" style="color:grey" target="_blank">Synoptic Data PBC.</a>
+                While the entire state of Utah is prone to wildfires, many of these stations were selected due to their proximity to areas with higher risk.
+
+            </p>
+            <hr>
+            <p id="descripSpotYear">
+                
+                This graph shows the calculated Keetch Byram's Drought Index (KBDI) from the beginning of this current year to yesterday. The KBDI is calculated using
+                the total precipitation and the Maximum Temperature for that day.
+                The orange dashed line is the 95th percentile values observed near that time of year based on the available data record.
+ 
+            </p>
+            
+            <p id="imgSpot1"><img id="imageBorder" src="./scriptsAndData/pngFiles/currentYear/KCDC_2020_Extreme_KBDI_Year.png"> </p>
+            <br>
+            
+            <p id="descripSpotPercentile">
+                <hr><br>
+                Percentile graphs highlight the typical conditions (50th percentile or median) computed for the daily KBDI values from the available data record. 
+                For the KBDI, the frequency of extreme events are shown by the 90th, 95th, and 99th percentile values.
+            </p>
+            <p id="imgSpot2"><img id="imageBorder" src="./scriptsAndData/pngFiles/stationClimatologicalPics/KCDC_plot_percentiles_KBDI.png"> </p>
+            
+            <br>
+            
+
+            <!------- This opens a virtual window so that we can get information from this window without having to do other things-->
+            <iframe id="iframe" src="http://home.chpc.utah.edu/~u1269218/RMP/stationLocation.html" style="display:none"></iframe>
+
+            <table id="smallTable">
+                <thead id="tableHeader">
+                    <td>Station Name</td> <td>Station ID</td> <td>Network Type</td> 
+                    <td>First Data Date</td> <td>Elevation (ft)</td>
+                </thead>
+                <!-- Spot for station info to show up -->
+                <tr id="tableSpot">
+                    <td>Cedar City Municipal Airport</td> <td>KCDC</td> <td>NWS/FAA</td>
+                    <td>1997-01-01</td> <td>5581</td>
+                </tr>
+            </table>
+            <br><br>
+        
+        </div>
+
+
+        <div id="footer">
+            <p>This page is maintained by James Powell @2020, <a href="https://atmos.utah.edu/" style="color: maroon;" target="_blank">Department of Atmospheric Sciences, University of Utah</a> <br>
+                For any question please contact me via my email<br>
+                 u1269218@utah.edu</p>
+        </div>
+
+    </body>
+</html>

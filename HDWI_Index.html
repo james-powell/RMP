@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type ="text/css" href="./stylesheet.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <script src="HDWI_Java.js"></script>
+        <title>Hot-Dry-Windy Index</title>
+    </head>
+
+    <body style="overflow-x:auto;">
+        <div id="header">
+        <h1>Hot-Dry-Windy Index</h1>
+        <p> Produced from the HRRR Model this is the HDWI values for the state of Utah</p>
+        
+        <div class="menu">                
+            <div class="dropdownMenu">
+                <button class="dropbtnMenu" >Current Data&nbsp 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-contentMenu">
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/">RMP Current Data</a>
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/CD_otherMWStns.html">Other Mesowest Stations</a>
+                </div>
+              </div> 
+            
+              <a href="http://home.chpc.utah.edu/~u1269218/RMP/KBDI_Index.html">KBDI Data</a>
+              <a href="http://home.chpc.utah.edu/~u1269218/RMP/HDWI_Index.html">HDWI Data</a>
+            
+            <div class="dropdownMenu">
+                <button class="dropbtnMenu">Climatology Record&nbsp
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-contentMenu">
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationClimatology.html">RMP Climatology Record</a>
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/SC_otherMWStns.html">Other Mesowest Stations</a>
+                </div>
+              </div> 
+            
+            <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationLocation.html">Station Information</a>
+
+        </div>
+    
+        </div>
+        
+        <div id="navbar">
+            <p>Select the desired date to view the Hot-Dry-Windy Index (HDWI) for the whole state of Utah</p>
+
+            <div id="dropdown">
+                <label for="date_pick">
+                    <input type="date" id="date_pick" name="trip-start"
+                        value="2020-10-21"
+                        min="2020-10-21" max="2020-10-24"></label>
+            </div>
+
+            <button onclick = "findPageInfo()">  
+                Submit  
+            </button>
+            
+        </div>
+
+
+        <div class="main">
+            <p>
+                These summaries were derived from the High Resolution Rapid Refresh (HRRR) Model records archives managed by the <a href="https://hive.utah.edu/concern/datasets/47429912h" style="color:grey" target="_blank">University of Utah.</a>
+                
+
+            </p>
+            <hr>
+            <p id="descripSpotCurrent">
+                
+                This graph shows the HDWI values for the state of Utah today. This data comes from the maximum value of the HDWI from about 6am - 6pm.
+                The white lines seen are an unfortunate byproduct of the zarr file format used to store the HRRR data, since the data is stored in sections 
+                to make acess easier, there is a resulting space in between the sections and is of no real consequence. The HDWI value next to the line is the value at the line 
+            </p>
+            
+            <p id="imgSpot1"><img id="imageBorder" src="./scriptsAndData/pngFiles/HDWI_HRRR_Pics/1021_HDWI_Utah.png"> </p>
+            <br>
+        
+        </div>
+
+
+        <div id="footer">
+            <p>This page is maintained by James Powell @2020, <a href="https://atmos.utah.edu/" style="color: maroon;" target="_blank">Department of Atmospheric Sciences, University of Utah</a> <br>
+                For any question please contact me via my email<br>
+                 u1269218@utah.edu</p>
+        </div>
+
+    </body>
+</html>

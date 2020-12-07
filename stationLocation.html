@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type ="text/css" href="stylesheet.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        
+        <!--<script src="stationLocationJava.js"></script>-->
+        <title>Weather Stations Locations</title>
+    </head>
+
+    <body style="overflow-x:auto;">
+        <div id="header">
+        
+            
+            <h1>  Stations Information Page</h1>
+            <!--<h1>Weather Stations Locations</h1>
+            <p> Station Metadata and Information Page</p>-->
+
+            <div class="menu">                
+                <div class="dropdownMenu">
+                    <button class="dropbtnMenu" >Current Data&nbsp 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-contentMenu">
+                      <a href="http://home.chpc.utah.edu/~u1269218/RMP/">RMP Current Data</a>
+                      <a href="http://home.chpc.utah.edu/~u1269218/RMP/CD_otherMWStns.html">Other Mesowest Stations</a>
+                    </div>
+                  </div> 
+                
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/KBDI_Index.html">KBDI Data</a>
+                
+                <div class="dropdownMenu">
+                    <button class="dropbtnMenu">Climatology Record&nbsp
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-contentMenu">
+                      <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationClimatology.html">RMP Climatology Record</a>
+                      <a href="http://home.chpc.utah.edu/~u1269218/RMP/SC_otherMWStns.html">Other Mesowest Stations</a>
+                    </div>
+                  </div> 
+                
+                <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationLocation.html">Station Information</a>
+    
+            </div>
+        </div>
+
+        <div class="main">
+            <table>
+                <tr>
+                    <td> <span class="dot"></span> Rocky Mountain Power Stations</td>   <td><span class="dot1"></span> All Other Stations</td> 
+                     <!--<td><span class="dot2"></span> Proposed stations</td>-->
+                </tr>
+                        </table>
+
+            <div id="locationPics">
+                <div id="locationPic">
+                    <p>Wasatch Front Station Locations</p>
+                    <a class="lightbox" href="#image1">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/saltLakeValleyMap.png"/>
+                    </a> 
+                    <div class="lightbox-target" id="image1">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/saltLakeValleyMap.png"/>
+                        <a class="lightbox-close" href="#"></a>
+                    </div>
+                </div>
+
+                <div id="locationPic">
+                    <p>Southwestern Utah Station Locations</p>
+                    <a class="lightbox" href="#image2">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/southernUtahMap_square.png"/>
+                    </a> 
+                    <div class="lightbox-target" id="image2">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/southernUtahMap_square.png"/>
+                        <a class="lightbox-close" href="#"></a>
+                    </div>
+                </div>
+                
+                <div id="locationPic">
+                    <p>Northern Utah Station Locations</p>
+                    <a class="lightbox" href="#image3">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/northernUtahMap_square.png"/>
+                    </a> 
+                    <div class="lightbox-target" id="image3">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/northernUtahMap_square.png"/>
+                        <a class="lightbox-close" href="#"></a>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------------------------------
+                <div id="locationPic">
+                    <p>Wasatch Front proposed station sites</p>
+                    <a class="lightbox" href="#image4">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/saltLakeValleyMap.png"/>
+                    </a> 
+                    <div class="lightbox-target" id="image4">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/saltLakeValleyMap.png"/>
+                        <a class="lightbox-close" href="#"></a>
+                    </div>
+                </div>
+
+                <div id="locationPic">
+                    <p>Southwestern Utah proposed station sites</p>
+                    <a class="lightbox" href="#image5">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/southernUtahMap_square.png"/>
+                    </a> 
+                    <div class="lightbox-target" id="image5">
+                        <img src="./scriptsAndData/pngFiles/stationLocationMaps/southernUtahMap_square.png"/>
+                        <a class="lightbox-close" href="#"></a>
+                    </div>
+                ------------------------------------------------------------------------------------------------------>
+            </div>
+
+            <hr><br>
+
+            <table>
+                <thead id="tableHeader">
+                    <td>Station Name</td> <td>Station ID</td> <td>Network Type</td> 
+                    <td>First Data Date</td> <td>Elevation (ft)</td>
+                </thead>
+                <tr id="PC010">
+                    <td>Sundance</td> <td>PC010</td> <td>PACIFICORP</td>
+                    <td>2019-08-26</td> <td>6435</td>
+                </tr>
+                <tr id="PC016">
+                    <td>Cross Hollow (Cedar City)</td> <td>PC016</td> <td>PACIFICORP</td>
+                    <td>2019-08-27</td> <td>6010</td>
+                </tr>
+                <tr id="PC018">
+                    <td>Park City Mountain Resort</td> <td>PC018</td> <td>PACIFICORP</td>
+                    <td>2019-08-28</td> <td>8147</td>
+                </tr>
+                <tr id="PC021">
+                    <td>Mill Creek Canyon</td> <td>PC021</td> <td>PACIFICORP</td>
+                    <td>2019-08-29</td> <td>5258</td>
+                </tr>
+                <tr id="PC022">
+                    <td>Mount Aire Canyon</td> <td>PC022</td> <td>PACIFICORP</td>
+                    <td>2019-08-29</td> <td>5523</td>
+                </tr>
+                <tr id="PC023">
+                    <td>North Jordanelle</td> <td>PC023</td> <td>PACIFICORP</td>
+                    <td>2019-08-29</td> <td>6851</td>
+                </tr>
+                <tr id="PC024">
+                    <td>NW Midway</td> <td>PC024</td> <td>PACIFICORP</td>
+                    <td>2019-08-29</td> <td>6246</td>
+                </tr>
+                <tr id="PC025">
+                    <td>Big Cottonwood</td> <td>PC025</td> <td>PACIFICORP</td>
+                    <td>2019-08-30</td> <td>6661</td>
+                </tr>
+                <tr id="PC032">
+                    <td>Summit Park</td> <td>PC032</td> <td>PACIFICORP</td>
+                    <td>2019-12-12</td> <td>6946</td>
+                </tr>
+                <tr id="PC033">
+                    <td>Little Cottonwood</td> <td>PC033</td> <td>PACIFICORP</td>
+                    <td>2019-12-04</td> <td>5691</td>
+                </tr>
+                <tr id="PC034">
+                    <td>Provo Canyon</td> <td>PC034</td> <td>PACIFICORP</td>
+                    <td>2019-12-04</td> <td>5182</td>
+                </tr>
+                <tr id="PC053">
+                    <td>New Harmony</td> <td>PC053</td> <td>PACIFICORP</td>
+                    <td>2020-10-07</td> <td>4914</td>
+                </tr>
+                <tr id="PC054">
+                    <td>Brian Head</td> <td>PC054</td> <td>PACIFICORP</td>
+                    <td>2020-10-08</td> <td>9676</td>
+                </tr>
+                <tr id="PC055">
+                    <td>Red Butte</td> <td>PC055</td> <td>PACIFICORP</td>
+                    <td>2020-10-08</td> <td>5261</td>
+                </tr>
+                <tr id="PC056">
+                    <td>Brighton</td> <td>PC056</td> <td>PACIFICORP</td>
+                    <td>2020-10-13</td> <td>8693</td>
+                </tr>
+                <tr id="PC057">
+                    <td>Wanship</td> <td>PC057</td> <td>PACIFICORP</td>
+                    <td>2020-10-15</td> <td>5824</td>
+                </tr>
+                <tr id="PC058">
+                    <td>Emigration Canyon</td> <td>PC058</td> <td>PACIFICORP</td>
+                    <td>2020-10-15</td> <td>5314</td>
+                </tr>
+                <tr id="PC059">
+                    <td>Silver Summit</td> <td>PC059</td> <td>PACIFICORP</td>
+                    <td>2020-10-24</td> <td>6706</td>
+                </tr>
+                <tr id="PC060">
+                    <td>Eden</td> <td>PC060</td> <td>PACIFICORP</td>
+                    <td>2020-10-24</td> <td>5179</td>
+                </tr>
+                <tr id="KCDC">
+                    <td>Cedar City Municipal Airport</td> <td>KCDC</td> <td>NWS/FAA</td>
+                    <td>1997-01-01</td> <td>5581</td>
+                </tr>
+                <tr id="KHCR">
+                    <td>Heber City Municipal-Russ McDonald Field Airport</td> <td>KHCR</td> <td>NWS/FAA</td>
+                    <td>2002-02-07</td> <td>5597</td>
+                </tr>
+                <tr id="KHIF">
+                    <td>Hill Air Force Base</td> <td>KHIF</td> <td>NWS/FAA</td>
+                    <td>1997-01-01</td> <td>4783</td>
+                </tr> 
+                <tr id="KSLC">
+                    <td>Salt Lake City, Salt Lake City International Airport</td> <td>KSLC</td> <td>NWS/FAA</td>
+                    <td>1997-01-01</td> <td>4226</td>
+                </tr>
+                <tr id="LPRU1">
+                    <td>LAVA POINT RAWS</td> <td>LPRU1</td> <td>RAWS</td>
+                    <td>1997-01-14</td> <td>7890</td>
+                </tr>
+                <tr id="PGRU1">
+                    <td>PLEASANT GROVE</td> <td>PGRU1</td> <td>RAWS</td>
+                    <td>1998-07-28</td> <td>5200</td>
+                </tr>
+                <tr id="BHCU1">
+                    <td>Brian Head 2S</td> <td>BHCU1</td> <td>UTAH DOT</td>
+                    <td>2007-09-21</td> <td>10472</td>
+                </tr>
+                <tr id="KIJ">
+                    <td>Kimball Junction I80</td> <td>KIJ</td> <td>UTAH DOT</td>
+                    <td>2002-01-15</td> <td>6403</td>
+                </tr>
+                <tr id="UT3">
+                    <td>Parleys Summit</td> <td>UT3</td> <td>UTAH DOT</td>
+                    <td>1997-03-27</td> <td>6993</td>
+                </tr>
+                <tr id="UT5">
+                    <td>Mouth Parleys</td> <td>UT5</td> <td>UTAH DOT</td>
+                    <td>1997-03-27</td> <td>4853</td>
+                </tr>
+                <tr id="UT9">
+                    <td>Lake Point I-80</td> <td>UT9</td> <td>UTAH DOT</td>
+                    <td>1997-03-27</td> <td>4248</td>
+                </tr>
+                <tr id="UTBLK">
+                    <td>I-15 @ Black Ridge</td> <td>UTBLK</td> <td>UTAH DOT</td>
+                    <td>2005-11-18</td> <td>5196</td>
+                </tr>
+                <tr id="UTHEB">
+                    <td>US-40 Heber</td> <td>UTHEB</td> <td>UTAH DOT</td>
+                    <td>2008-12-09</td> <td>5733</td>
+                </tr>
+                <tr id="UTJUN">
+                    <td>SR-85 @ Juniper</td> <td>UTJUN</td> <td>UTAH DOT</td>
+                    <td>2012-10-30</td> <td>4900</td>
+                </tr>
+                <tr id="UTLGP">
+                    <td>Legacy Parkway</td> <td>UTLGP</td> <td>UTAH DOT</td>
+                    <td>2008-09-04</td> <td>4215</td>
+                </tr>
+                <tr id="UTMFS">
+                    <td>US-40 Mayflower Summit</td> <td>UTMFS</td> <td>UTAH DOT</td>
+                    <td>2008-12-09</td> <td>6929</td>
+                </tr>
+                <tr id="UTPLC">
+                    <td>Powerhouse - Little Cottonwood Canyon</td> <td>UTPLC</td> <td>UTAH DOT</td>
+                    <td>2015-01-21</td> <td>6049</td>
+                </tr>
+                <tr id="UTPCY">
+                    <td>Provo Canyon @ mp10</td> <td>UTPCY</td> <td>UTAH DOT</td>
+                    <td>2010-01-01</td> <td>5119</td>
+                </tr>
+                <tr id="UTSTR">
+                    <td>S-Turns - Big Cottonwood Canyon</td> <td>UTSTR</td> <td>UTAH DOT</td>
+                    <td>2014-08-18</td> <td>6235</td>
+                </tr>
+                <tr id="UTSVC">
+                    <td>I-80 @ Silver Ck Jct</td> <td>UTSVC</td> <td>UTAH DOT</td>
+                    <td>2005-11-18</td> <td>6498</td>
+                </tr>
+                <tr id="HERUT">
+                    <td>Herriman</td> <td>HERUT</td> <td>UUNET</td>
+                    <td>2013-03-28</td> <td>5144</td>
+                </tr>
+                <tr id="MTMET">
+                    <td>U of U Mountain Met Lab</td> <td>MTMET</td> <td>UUNET</td>
+                    <td>2012-04-26</td> <td>4996</td>
+                </tr>
+                <tr id="UTASG">
+                    <td>Aspen Grove</td> <td>UTASG</td> <td>AVALANCHE</td>
+                    <td>2010-12-01</td> <td>6880</td>
+                </tr>                
+                <tr id="P056C">
+                    <td>Provo Canyon MWS 9959</td> <td>P056C</td> <td>INTELLISENSE</td>
+                    <td>2020-07-02</td> <td>6733</td>
+                </tr>
+                <tr id="P057C">
+                    <td>Provo Canyon MWS MWS 6145</td> <td>P057C</td> <td>INTELLISENSE</td>
+                    <td>2020-07-01	</td> <td>5315</td>
+                </tr>
+                <tr id="BBN">
+                    <td>BOUNTIFUL BENCH</td> <td>BBN</td> <td>KSL</td>
+                    <td>2001-10-30</td> <td>4950</td>
+                </tr>
+                <tr id="PCPD"> 
+                    <td>Park City - Payday Top</td> <td>PCPD</td> <td>PCMR</td>
+                    <td>2008-11-09</td> <td>8275</td>
+                </tr>
+
+            </table>
+            
+            <br>
+
+        </div>
+
+
+        <div id="footer">
+            <p>This page is maintained by James Powell @2020, <a href="https://atmos.utah.edu/" target="_blank">Department of Atmospheric Sciences, University of Utah</a> <br>
+                For any question please contact me via my email<br>
+                 u1269218@utah.edu</p>
+        </div>
+
+    </body>
+</html>

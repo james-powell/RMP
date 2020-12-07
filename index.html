@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type ="text/css" href="./stylesheet.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <script src="currentDataJava.js"></script>
+        <title>Current Years Data</title>
+    </head>
+
+    <body style="overflow-x:auto;">
+        <div id="header">
+        <h1>RMP Current Data</h1>
+        <p> Current data with its extreme climatological conditions that can often contribute to increased wildfire risk</p>
+        
+        <div class="menu">                
+            <div class="dropdownMenu">
+                <button class="dropbtnMenu" >Current Data&nbsp 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-contentMenu">
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/">RMP Current Data</a>
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/CD_otherMWStns.html">Other Mesowest Stations</a>
+                </div>
+              </div> 
+            
+              <a href="http://home.chpc.utah.edu/~u1269218/RMP/KBDI_Index.html">KBDI Data</a>
+            
+            <div class="dropdownMenu">
+                <button class="dropbtnMenu">Climatology Record&nbsp
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-contentMenu">
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationClimatology.html">RMP Climatology Record</a>
+                  <a href="http://home.chpc.utah.edu/~u1269218/RMP/SC_otherMWStns.html">Other Mesowest Stations</a>
+                </div>
+              </div> 
+            
+            <a href="http://home.chpc.utah.edu/~u1269218/RMP/stationLocation.html">Station Information</a>
+
+        </div>
+    
+        </div>
+        <div id="navbar">
+            <p>Select the desired station, variable, and graph type and then click submit</p>
+
+            <div id="dropdown">
+                <form id="form"> 
+                    <select id="station">
+                        <option id="1"  value="KCDC" selected="">(KCDC) Cedar City Municipal Airport</option>
+                        <option id="2"  value="KSLC" >(KSLC) Salt Lake City International Airport</option> 
+                        <option id="3"  value="UT5"  >(UT5) MOUTH PARLEYS</option>
+                        <option id="4"  value="UT3"  >(UT3) PARLEYS SUMMIT</option>
+                        <option id="5"  value="KIJ"  >(KIJ) Kimball Junction I80</option>
+                        <option id="6"  value="UTJUN">(UTJUN) SR-85 @ Juniper</option>
+                        <option id="7"  value="UTHEB">(UTHEB) US-40 Heber</option>
+                        <option id="8"  value="KHCR" >(KHCR) Heber City Municipal Field Airport</option>
+                        <option id="9"  value="PGRU1">(PGRU1) Pleasant Grove</option>
+                        <option id="10" value="UTBLK">(UTBLK) I-15 @ Black Ridge</option>
+                        <option id="11" value="BHCU1">(BHCU1) Brian Head 2S</option>
+                        <option id="12" value="LPRU1">(LPRU1) Lava Point RAWS</option>
+                        <option id="13" value="UTLGP">(UTLGP) Legacy Parkway</option>
+                        <option id="14" value="BBN"  >(BBN) Bountiful Bench</option>
+                        <option id="15" value="KHIF" >(KHIF) Hill Air Force Base</option>
+                        <option id="16" value="PC010" >(PC010) Sundance</option>
+                        <option id="17" value="PC016" >(PC016) Cross Hollow (Cedar City)</option>
+                        <option id="18" value="PC018" >(PC018) Park City Mountain Resort</option>
+                        <option id="19" value="PC021" >(PC021) Mill Creek Canyon</option>
+                        <option id="20" value="PC022" >(PC022) Mount Aire Canyon</option>
+                        <option id="21" value="PC023" >(PC023) North Jordanelle</option>
+                        <option id="22" value="PC024" >(PC024) NW Midway</option>
+                        <option id="23" value="PC025" >(PC025) Big Cottonwood</option>
+                        <option id="24" value="PC032" >(PC032) Summit Park</option>
+                        <option id="25" value="PC033" >(PC033) Little Cottonwood</option>
+                        <option id="26" value="PC034" >(PC034) Provo Canyon</option>
+                        <option id="26" value="PC053" >(PC053) New Harmony</option>
+                        <option id="26" value="PC054" >(PC054) Brian Head</option>
+                        <!--
+                            <option id="26" value="PC055" >(PC055) Red Butte</option>
+                            <option id="26" value="PC056" >(PC056) Brighton</option>
+                            <option id="26" value="PC057" >(PC057) Wanship</option>
+                        -->
+                        <option id="26" value="PC058" >(PC058) Emigration Canyon</option>
+                        <option id="26" value="PC059" >(PC059) Silver Summit</option>
+                        <!--
+                            <option id="26" value="PC060" >(PC060) Eden</option>
+                            <option id="26" value="P056C" >(P056C) Redden Road</option>>
+                            <option id="26" value="P057C" >(P057C) Emigration Canyon</option>
+                        -->
+                        
+                        
+
+
+    
+                    </select>
+                    <select id="variable">
+                        <option id="27" selected="">Fosberg Fire Weather Index</option>
+                        <option id="28">Wind Speed</option>
+                        <option id="29">Wind Gust</option>
+                        <option id="30">Relative Humidity</option>
+                    </select>
+                    <select id="period">
+                        <option id="31" value="24Hrs"selected="">Last 24 Hours</option>
+                        <option id="31" value="Week">Previous Week</option>
+                        <option id="32" value="Month">Previous Month</option>
+                        <option id="32" value="sinceMay">Current Fire Season (since May 1)</option>
+                    </select>
+                </form> 
+            </div>
+
+            <button onclick = "findPageInfo()">  
+                Submit  
+            </button>
+            
+        </div>
+
+
+        <div class="main">
+            <p>
+                These summaries were derived from records archived by <a href="https://synopticdata.com/" style="color:grey" target="_blank">Synoptic Data PBC.</a>
+                While the entire state of Utah is prone to wildfires, many of these stations were selected due to their proximity to areas with higher risk.
+
+            </p>
+            <hr>
+            <p id="descripSpotCurrent">
+                
+                This graph shows the last 24Hrs of data from KCDC. This data comes from the 6-hr. running mean of the Fosberg Fire Weather Index (FFWI). 
+                The red data points highlight times when the FFWI exceeded the threshold. 
+                The orange dashed line is the 95th percentile values observed near that time of year based on the available data record.
+ 
+            </p>
+            
+            <p id="imgSpot1"><img id="imageBorder" src="./scriptsAndData/pngFiles/extremePercentilePics/KCDC_2020_Extreme_FFWI_24Hrs.png"> </p>
+            <br>
+            <!--
+            <p id="descripSpotYear">
+                <hr><br>
+                This shows an overview of the current year Fosberg Fire Weather Index percentile trend. The percentile values are from the daily mean FFWI.
+            </p>
+            <p id="imgSpot"><img id="imageBorder" src="../scriptsAndData/pngFiles/yearlyPercentilePics/KSLC_2020_Percentile_FFWI.png"> </p>
+            
+            <br>
+            -->
+
+            <!------- This opens a virtual window so that we can get information from this window without having to do other things-->
+            <iframe id="iframe" src="http://home.chpc.utah.edu/~u1269218/RMP/stationLocation.html" style="display:none"></iframe>
+
+            <table id="smallTable">
+                <thead id="tableHeader">
+                    <td>Station Name</td> <td>Station ID</td> <td>Network Type</td> 
+                    <td>First Data Date</td> <td>Elevation (ft)</td>
+                </thead>
+                <!-- Spot for station info to show up -->
+                <tr id="tableSpot">
+                    <td>Cedar City Municipal Airport</td> <td>KCDC</td> <td>NWS/FAA</td>
+                    <td>1997-01-01</td> <td>5581</td>
+                </tr>
+            </table>
+            <br><br>
+        
+        </div>
+
+
+        <div id="footer">
+            <p>This page is maintained by James Powell @2020, <a href="https://atmos.utah.edu/" style="color: maroon;" target="_blank">Department of Atmospheric Sciences, University of Utah</a> <br>
+                For any question please contact me via my email<br>
+                 u1269218@utah.edu</p>
+        </div>
+
+    </body>
+</html>
