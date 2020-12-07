@@ -1,8 +1,11 @@
 # RMP
 Project  : Rocky Mtn Power 2020 (John Horel has said the webpages may be the start to do other work into station climatology besides just this)
+
 Author   :  James Powell
+
 Purpose  : Help develop tools to better predict wildfire conditions. It will be avaible via my public_html for communication purposes.
            Webpage link is found here http://home.chpc.utah.edu/~u1269218/RMP/
+
 Last Edit: 12/7/2020
 
 Programs needed: all scripts were created and initally ran using python3.7
@@ -73,8 +76,12 @@ Flow chart:
                 -graph_extremePercentiles_24Hour.py
                 -graph_extremePercentiles_KBDI.py
             4. These webpages then provide access to the png files
+                -CD_otherMWStns.html
+                -HDWI_Index.html
                 -index.html
                 -KBDI_Index.html
+                -SC_otherMWStns.html
                 -stationClimatology.html
                 -stationLocation.html
+
 
