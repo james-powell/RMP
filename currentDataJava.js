@@ -35,8 +35,6 @@ function findPageInfo()
 //*******************************************************************************//
 function getPictures(stID, variable, period)
 {
-    // add code later to automate getting the current year
-    var thisYear = '2020';
     // create an image object
     var picYear   = new Image();
     var picRecent = new Image();
@@ -44,12 +42,12 @@ function getPictures(stID, variable, period)
     if (variable == "Wind Speed")
     {
         //// create the file path to the user selected image 
-        //var string = filePathToPics + 'yearlyPercentilePics/' + stID + "_" + thisYear + "_Percentile_wind_speed.png";
+        //var string = filePathToPics + 'yearlyPercentilePics/' + stID + "_Percentile_wind_speed.png";
         //picYear.src = string;
         //picYear.setAttribute("alt", "Having trouble loading " +string); 
 
         // create the file path to the user 2nd selected image 
-        var string1 = filePathToPics + 'extremePercentilePics/' + stID + "_" + thisYear + "_Extreme_wind_speed_" + period + ".png";
+        var string1 = filePathToPics + 'extremePercentilePics/' + stID + "_Extreme_wind_speed_" + period + ".png";
         picRecent.src = string1;
         picRecent.setAttribute("alt", "Having trouble loading " +string1);
     }
@@ -58,12 +56,12 @@ function getPictures(stID, variable, period)
     else if (variable == "Wind Gust")
     {
         //// create the file path to the user selected image
-        //var string = filePathToPics + 'yearlyPercentilePics/' + stID + "_" + thisYear + "_Percentile_wind_gust.png";
+        //var string = filePathToPics + 'yearlyPercentilePics/' + stID + "_Percentile_wind_gust.png";
         //picYear.src = string;
         //picYear.setAttribute("alt", "Having trouble loading " +string);
 
         // create the file path to the user 2nd selected image 
-        var string1 = filePathToPics + 'extremePercentilePics/' + stID + "_" + thisYear + "_Extreme_wind_gust_" + period + ".png";
+        var string1 = filePathToPics + 'extremePercentilePics/' + stID + "_Extreme_wind_gust_" + period + ".png";
         picRecent.src = string1;
         picRecent.setAttribute("alt", "Having trouble loading " +string1);
     }
@@ -72,12 +70,12 @@ function getPictures(stID, variable, period)
     else if (variable == "Fosberg Fire Weather Index")
     {
         //// create the file path to the user selected image
-        //var string = filePathToPics + 'yearlyPercentilePics/' + stID + "_" + thisYear + "_Percentile_FFWI.png";
+        //var string = filePathToPics + 'yearlyPercentilePics/' + stID + "_Percentile_FFWI.png";
         //picYear.src = string;
         //picYear.setAttribute("alt", "Having trouble loading " +string);
 
         // create the file path to the user 2nd selected image 
-        var string1 = filePathToPics + 'extremePercentilePics/' + stID + "_" + thisYear + "_Extreme_FFWI_" + period + ".png";
+        var string1 = filePathToPics + 'extremePercentilePics/' + stID + "_Extreme_FFWI_" + period + ".png";
         picRecent.src = string1;
         picRecent.setAttribute("alt", "Having trouble loading " +string1);
     }
@@ -86,12 +84,12 @@ function getPictures(stID, variable, period)
     else 
     {
         //// create the file path to the user selected image
-        //var string = filePathToPics + 'yearlyPercentilePics/' + stID + "_" + thisYear + "_Percentile_relative_humidity.png";
+        //var string = filePathToPics + 'yearlyPercentilePics/' + stID + "_Percentile_relative_humidity.png";
         //picYear.src = string;
         //picYear.setAttribute("alt", "Having trouble loading " +string);
 
         // create the file path to the user 2nd selected image 
-        var string1 = filePathToPics + 'extremePercentilePics/' + stID + "_" + thisYear + "_Extreme_relative_humidity_" + period + ".png";
+        var string1 = filePathToPics + 'extremePercentilePics/' + stID + "_Extreme_relative_humidity_" + period + ".png";
         picRecent.src = string1;
         picRecent.setAttribute("alt", "Having trouble loading " +string1);
     }

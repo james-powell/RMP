@@ -50,6 +50,36 @@ def sendEmail( emailBody, emailSubject ):
     emailp.write(emailmessage+"\n")
     emailstatus = emailp.close()
 
+#---------------------------------------------------------------------------#
+# organizeDates: This takes the percentile dates in format MMDD and puts them
+#                in a format compatabile with datetime objects
+#---------------------------------------------------------------------------#
+def organizeDates(final_date, perc_df):
+    # Get the final_date in a format to compare to the MMDD format
+    final_date_str = '{:02d}'.format(final_date.month) + '{:02d}'.format(final_date.day)
+
+    i = 0
+    ctr = 0
+    # This loop will go thorugh each day
+    while i < len(perc_df['MODY']):
+        # check if its before the end date then its still this year
+        if ctr == 0:
+            # If we have passed today then set ctr to 1
+            if str(perc_df['MODY'][i]) == final_date_str:
+                ctr = 1
+
+            perc_df['MODY'][i] = str(final_date.year) + str(perc_df["MODY"][i])
+
+        # if we have passed today then the rest of the dates should be last year
+        else:
+            perc_df['MODY'][i] = str(final_date.year - 1) + str(perc_df["MODY"][i])
+            
+        i += 1
+
+    return(perc_df['MODY'])
+
+
+
 if __name__ =='__main__':
     # set global variables
     filePath = '/uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData'
@@ -57,7 +87,7 @@ if __name__ =='__main__':
     # This is James Powells API token
     token = 'c03c614370e24a89a2f73d2e2cd80fa8'
     # I included BCHU1 again since it started reporting again
-    stations = ["KSLC", "KCDC", "PGRU1", "LPRU1"] # "KHIF"  This station had problems with the precip reprted data 2020, 9, 8 so stopping calculation of the KBDI for now till we can restart it
+    stations = [  "KSLC", "KCDC", "PGRU1", "LPRU1"] # "KHIF"  This station had problems with the precip reprted data 2020, 9, 8 so stopping calculation of the KBDI for now till we can restart it
     #stations = ['KCDC']
 
     for station in stations:
@@ -83,7 +113,7 @@ if __name__ =='__main__':
             # calculate the new KBDI index for all the days up until yesterday
             try:
                 startDate = datetime.strptime(KBDI_date[-1], '%m/%d/%Y') + timedelta(days=1)
-            except:
+            except Exception:
                 startDate = datetime.strptime(KBDI_date[-1], '%Y-%m-%d') + timedelta(days=1)
             # We need a full day to calculate the KBDI so our endDate will be for yesterday
             # so we have a full days of data to call 
@@ -91,6 +121,8 @@ if __name__ =='__main__':
             # Get int string form
             apiStartTime = datetime.strftime(startDate, format='%Y%m%d')
             apiEndTime   = datetime.strftime(endDate,   format='%Y%m%d')
+            #print('apiStartTime: ', apiStartTime)
+            #print('apiEndTime: ', apiEndTime)
 
             #print("Starting on date:", startDate.date())
 
@@ -121,7 +153,7 @@ if __name__ =='__main__':
                         k += 1
             
             # If it calls jsut one day the interval section is not there so just add the one value and move on
-            except:
+            except Exception:
                 precip.append(precipJson['STATION'][0]['OBSERVATIONS']['precipitation'][k]['total'])
                 stringDays.append(precipJson['STATION'][0]['OBSERVATIONS']['precipitation'][k]['last_report'])
                 #print('Running the except Statement')
@@ -130,6 +162,7 @@ if __name__ =='__main__':
 
             # put precip in numpy array ad the rainDays in a pandas datetime object
             precip = np.array(precip)
+            #print('precip: ', precip)
             rainDays = pd.to_datetime(stringDays, format= '%Y-%m-%dT%H:%M:%SZ')
 
             #############################################################################
@@ -185,18 +218,13 @@ if __name__ =='__main__':
                 try:
                     dailyMaxTemp.append(np.nanmax(dailyValues2))
                     tempDays.append(time_dt[i-1])
-                except:
+                except Exception:
                     print('ERROR: No data for this day ', iterDate.date())
                 
                 # move it forward to the next day
                 iterDate += timedelta(days=1)
                 if i >= len(time_dt)-1:
                     break
-                
-            #print('len(dailyMaxTemp): ', len(dailyMaxTemp))
-            #print('len(tempDays): ', len(tempDays))
-            #print('len(precip): ', len(precip))
-            #print('len(rainDays): ', len(rainDays))
 
             #############################################################################
             ########################## COMPUTE THE KBDI VALUES ##########################
@@ -339,7 +367,7 @@ if __name__ =='__main__':
 
             # This is for the period of the x axis
             begin = datetime.today().date().replace(day=1).replace(month=1)
-            endDate = endDate.replace(month=12, day=31)
+            endDate2 = endDate.replace(month=12, day=31)
 
             #--------------------------------------------------------------------------------------------------------------------------------#
 
@@ -347,7 +375,8 @@ if __name__ =='__main__':
             # Read in the data for the 95th percentile and the 5th so we can plot it
             KBDIperc  = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_KBDI.csv' % (filePath, station),usecols=(0,22) , dtype = str)
             # Get the percentile information in the right format
-            KBDIperc['MODY'] = str(endDate.year) + KBDIperc["MODY"]
+            KBDIperc['MODY'] = organizeDates(endDate, KBDIperc)
+            print('KBDIperc[MODY] : ', KBDIperc['MODY'])
             KBDIperc['MODY'] = pd.to_datetime(KBDIperc['MODY'], format='%Y%m%d')
             
             KBDIperc['95.00'] = pd.to_numeric(KBDIperc['95.00'])
@@ -371,7 +400,7 @@ if __name__ =='__main__':
                 ax.set_title('%s %s For The Current Year\n Last updated %s' %(station, varName, yesterday.date()))            
                 
                 # set the time period
-                ax.set_xlim( xmin=begin, xmax=endDate)
+                ax.set_xlim( xmin=begin, xmax=endDate2)
 
                 lgd = ax.legend(loc='upper center', bbox_to_anchor=(.5,1.28),
                                 ncol=2, shadow = True)
@@ -383,14 +412,14 @@ if __name__ =='__main__':
                 #plt.autoscale(enable=True, axis='both')
                 plt.figure(figsize=(8,30))
 
-                fig.savefig('%s/pngFiles/currentYear/%s_%s_Extreme_%s_Year.png' % (filePath, station, endDate.year, fileName),  bbox_extra_artists=(lgd,), bbox_inches='tight')
-                print('Saving the figure: ', '%s/pngFiles/currentYear/%s_%s_Extreme_%s_Year.png' % (filePath, station, endDate.year, fileName))
+                fig.savefig('%s/pngFiles/KBDI_Pics/%s_Extreme_%s_Year.png' % (filePath, station, fileName),  bbox_extra_artists=(lgd,), bbox_inches='tight')
+                print('Saving the figure: ', '%s/pngFiles/KBDI_Pics/%s_Extreme_%s_Year.png' % (filePath, station, fileName))
                 plt.close(fig)
 
 
             #print('______________________DONE WITH STATION: %s______________________________________\n' % (station))
 
-        except:
+        except Exception:
             email_Subject = "%s, RMP code error with KBDI" %(station)
             email_Body = """graph_extremePercentiles_KBDI.py is skipping station %s.
             Please contact James Powell if you have any questions at u1269218@utah.edu.
@@ -398,5 +427,6 @@ if __name__ =='__main__':
 
             -Pointer Bot""" %(station, station)
 
-            sendEmail( email_Body, email_Subject)
+            # turning this off for the winter
+            #sendEmail( email_Body, email_Subject)
         

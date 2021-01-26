@@ -75,7 +75,8 @@ def getLatLons(chunkX,chunkY):
     return chunkLats, chunkLons
 
 #-----------------------------------------------------------------------------#
-# : 
+# getAllLatLon_Dictionary: This gets the latitudes and longitudes for all four
+#                          chunks and stores them in a dictionary
 #-----------------------------------------------------------------------------#
 def getAllLatLon_Dictionary(initial_latitudes, initial_longitudes, geographical_location):
     # Dictionary to store lat and lon data for each of the 4 chunks
@@ -127,6 +128,8 @@ def getAWS_Keys():
 #-----------------------------------------------------------------------------#
 def decompressChunk(data_filePath, chunkID, which_f):
     #buf = ncd.blosc.decompress(open(data_filePath+chunkID, 'rb').read())
+    #print('data_filePath: ', data_filePath)
+    #print('chunkID: ', chunkID)
     buf = ncd.blosc.decompress(fs.open(data_filePath+chunkID, 'rb').read())
 
     if which_f == 'f4':
@@ -322,7 +325,7 @@ def setUpConditionsForGraph():
 # graphHDWI: This function takes in the data needed and the other settings
 #            in order to graph the HDWI
 #-----------------------------------------------------------------------------#
-def graphHDWI(HDW_dictionary, latLon_dictionary, lakes, states, bcol, datacrs, lvls, cmin, cmax, string_date ):
+def graphHDWI(HDW_dictionary, latLon_dictionary, lakes, states, bcol, datacrs, lvls, cmin, cmax, string_date, run ):
     
     fig,ax = plt.subplots(figsize=(10,10),subplot_kw={'projection': datacrs})
 
@@ -337,14 +340,14 @@ def graphHDWI(HDW_dictionary, latLon_dictionary, lakes, states, bcol, datacrs, l
     ax.add_feature(states,edgecolor='black',zorder=100,linewidth=3)
 
     ax.add_feature(lakes,edgecolor='darkblue',zorder=98,linewidth=2.0)
-    ax.set_title('HRRR HDW for %s' %(stringDate) ,fontsize=30)
+    ax.set_title('HRRR HDWI for %s' %(stringDate) ,fontsize=30)
 
     cbar = plt.colorbar(orientation='horizontal', pad = 0.01, aspect = 25)
     #cbar.set_label('HDWI Values', fontsize=16,pad = 0.1)
     cbar.set_ticks([np.arange(cmin, cmax, 50)])
 
 
-    plot_file = '%s/pngFiles/HDWI_HRRR_Pics/%s_HDWI_Utah.png' %(filePath, string_date[4:])
+    plot_file = '%s/pngFiles/HDWI_HRRR_Pics/%s_HDWI_Utah_run%sz.png' %(filePath, string_date[4:], run)
     plt.savefig(plot_file)
 
 
@@ -375,10 +378,10 @@ fs = s3fs.S3FileSystem( key = ACCESS_KEY, secret = SECRET_KEY,
 ###############################################################################
 
 # initial variables
-date = datetime(2020,10,31, 1)
+date = datetime(2020,10,31, 19)
 stringDate = datetime.strftime(date, '%Y%m%d')
 
-print(fs.ls('s3://hrrrzarr/prs/%s/%s_%sz_prs.zarr/' % (stringDate, stringDate, date.hour)))
+#print(fs.ls('s3://hrrrzarr/prs/%s/%s_%sz_prs.zarr/' % (stringDate, stringDate, date.hour)))
 
 # HDW index values will be stored here
 HDW_dict = {'HDW_NE': np.zeros((150, 150)), 'HDW_NW': np.zeros((150, 150)), 
@@ -477,18 +480,20 @@ while str(date.hour) != '0':
         if cmin > np.nanmin(HDW_dict[HDW_key]):
             cmin = np.nanmin(HDW_dict[HDW_key])
                        
+    #date = date + timedelta(hours = 1)
+
+    #print('cmax: ', cmax)
+    #print('cmin: ', cmin)
+
+
+    ############################################################################### 
+    ################ PLOT THE HDW INDEX VALUES FOR THIS CHUNK #####################
+    ############################################################################### 
+
+    # Set up base conditions
+    lakes, states, bcol, datacrs, lvls = setUpConditionsForGraph()
+
+    graphHDWI(HDW_dict, latLon_dict, lakes, states, bcol, 
+                    datacrs, lvls, cmin, cmax, stringDate, date.hour)
+
     date = date + timedelta(hours = 1)
-
-#print('cmax: ', cmax)
-#print('cmin: ', cmin)
-
-
-############################################################################### 
-################ PLOT THE HDW INDEX VALUES FOR THIS CHUNK #####################
-############################################################################### 
-
-# Set up base conditions
-lakes, states, bcol, datacrs, lvls = setUpConditionsForGraph()
-
-graphHDWI(HDW_dict, latLon_dict, lakes, states, bcol, 
-                datacrs, lvls, cmin, cmax, stringDate)

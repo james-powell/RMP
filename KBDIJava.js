@@ -44,7 +44,7 @@ function getPictures(stID)
     var picPerc = new Image();
 
     // create the file path to the user selected image 
-    var string = filePathToPics + 'currentYear/' + stID + "_" + thisYear + "_Extreme_KBDI_Year.png";
+    var string = filePathToPics + 'KBDI_Pics/' + stID + "_Extreme_KBDI_Year.png";
     picYear.src = string;
     picYear.setAttribute("alt", "Having trouble loading " +string); 
 
