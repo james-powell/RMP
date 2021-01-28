@@ -5,7 +5,7 @@
 /*          stations webpage                                                     */
 ///////////////////////////////////////////////////////////////////////////////////
 // this is the file path to the png files
-var filePath = "./scriptsAndData/pngFiles/stationClimatologicalPics/";
+var filePath = "../scriptsAndData/pngFiles/stationClimatologicalPics/";
 
 
 //*******************************************************************************//

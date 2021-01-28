@@ -4,7 +4,7 @@
 /* Purpose: This is the Java script for the station Climatology webpage          */
 ///////////////////////////////////////////////////////////////////////////////////
 // this is the file path to the png files
-var filePath = "./scriptsAndData/pngFiles/stationClimatologicalPics/";
+var filePath = "../scriptsAndData/pngFiles/stationClimatologicalPics/";
 
 
 //*******************************************************************************//
@@ -220,11 +220,6 @@ function getTable(stID)
     document.getElementById("tableSpot").innerHTML = divElement.innerHTML;
 
 }
-
-
-//*******************************************************************************//
-// 
-//*******************************************************************************//
 
 
 //*******************************************************************************//

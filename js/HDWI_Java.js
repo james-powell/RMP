@@ -4,7 +4,7 @@
 /* Purpose: This is the Java script for the HDWI webpage for use by RMP          */
 ///////////////////////////////////////////////////////////////////////////////////
 
-filePathToPics = './scriptsAndData/pngFiles/'
+filePathToPics = '../scriptsAndData/pngFiles/'
 
 //*******************************************************************************//
 // findPageInfo: For the yearly percentile page this gets the values that the    //

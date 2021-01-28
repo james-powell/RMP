@@ -4,7 +4,7 @@
 /* Purpose: This is the Java script for the currentData other mesowest webpage   */
 ///////////////////////////////////////////////////////////////////////////////////
 
-filePathToPics = './scriptsAndData/pngFiles/'
+filePathToPics = '../scriptsAndData/pngFiles/'
 
 
 //*******************************************************************************//

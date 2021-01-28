@@ -15,7 +15,7 @@ body{
 
 /* ========================== HEADER ====================*/
 #header{
-    background-image: url("./scriptsAndData/pngFiles/fireLine.jpg");
+    background-image: url("../scriptsAndData/pngFiles/fireLine.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-color: #920101; 

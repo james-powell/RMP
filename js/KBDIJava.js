@@ -5,15 +5,11 @@
 ///////////////////////////////////////////////////////////////////////////////////
 
 
-//=============================================================================================================//
-// =============================   THIS SECTION IS FOR THE YEAR PERCENTILE PAGE ===============================//
-//=============================================================================================================//
-
-filePathToPics = './scriptsAndData/pngFiles/'
+filePathToPics = '../scriptsAndData/pngFiles/'
 
 
 //*******************************************************************************//
-// findYearPercentilePageInfo():  For the yearly percentile page
+// findPageInfo():  For the yearly percentile page
 //              this gets the values that the user selected from the dropdown
 //              menu and passes them to the getPicture function
 //*******************************************************************************//
