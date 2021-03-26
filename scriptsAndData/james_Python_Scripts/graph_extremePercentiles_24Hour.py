@@ -169,10 +169,10 @@ def get_perc_info(stn_dic, stn):
     if stn in compareDir:
         ## tHIS SECTION GETS THE DATA FOR THE 95TH PERCENTILE
         # Read in the data for the 95th percentile and the 5th so we can plot it
-        RH5perc         = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_relative_humidity_set_1.csv' % (filePath, compareDir[station]),usecols=(0,4) , dtype = str)
-        windSpeed95perc = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_wind_speed_set_1.csv' % (filePath, compareDir[station]),        usecols=(0,22), dtype = str)
-        windGust95perc  = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_wind_gust_set_1.csv' % (filePath, compareDir[station]),       usecols=(0,22), dtype = str)
-        FFWI95perc      = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_FFWI.csv' % (filePath, compareDir[station]),                   usecols=(0,22), dtype = str)
+        RH5perc         = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_relative_humidity_set_1.csv' % (filePath, compareDir[station]),usecols=(0,4) , skiprows=[60], dtype = str)
+        windSpeed95perc = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_wind_speed_set_1.csv' % (filePath, compareDir[station]),       usecols=(0,22), skiprows=[60], dtype = str)
+        windGust95perc  = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_wind_gust_set_1.csv' % (filePath, compareDir[station]),        usecols=(0,22), skiprows=[60], dtype = str)
+        FFWI95perc      = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_FFWI.csv' % (filePath, compareDir[station]),                   usecols=(0,22), skiprows=[60], dtype = str)
 
         print('Using __%s__ station climo for %s  '%(compareDir[station], station))
 
@@ -180,11 +180,12 @@ def get_perc_info(stn_dic, stn):
     else:
         ## tHIS SECTION GETS THE DATA FOR THE 95TH PERCENTILE
         # Read in the data for the 95th percentile and the 5th so we can plot it
-        RH5perc         = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_relative_humidity_set_1.csv' % (filePath, station),usecols=(0,4) , dtype = str)
-        windSpeed95perc = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_wind_speed_set_1.csv' % (filePath, station),        usecols=(0,22), dtype = str)
-        windGust95perc  = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_wind_gust_set_1.csv' % (filePath, station),       usecols=(0,22), dtype = str)
-        FFWI95perc      = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_FFWI.csv' % (filePath, station),                   usecols=(0,22), dtype = str)
+        RH5perc         = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_relative_humidity_set_1.csv' % (filePath, station),usecols=(0,4) , skiprows=[60], dtype = str)
+        windSpeed95perc = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_wind_speed_set_1.csv' % (filePath, station),       usecols=(0,22), skiprows=[60], dtype = str)
+        windGust95perc  = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_wind_gust_set_1.csv' % (filePath, station),        usecols=(0,22), skiprows=[60], dtype = str)
+        FFWI95perc      = pd.read_csv('%s/dataFiles/percentiles/%s_percentiles_FFWI.csv' % (filePath, station),                   usecols=(0,22), skiprows=[60], dtype = str)
 
+    #print(FFWI95perc)
     percentile_list = [RH5perc, windSpeed95perc, windGust95perc, FFWI95perc]
     
     return(percentile_list)

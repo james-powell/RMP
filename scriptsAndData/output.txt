@@ -1,24 +1,24 @@
 -----------Starting Station: KSLC --------------
 Station KSLC VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101040800 
+apitimeend:  202103040800 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040800&stid=KSLC&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040800&stid=KSLC&vars=wind_speed
 Station KSLC VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101040801 
+apitimeend:  202103040801 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040801&stid=KSLC&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040801&stid=KSLC&vars=wind_gust,peak_wind_speed
 Station KSLC VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101040803 
+apitimeend:  202103040803 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040803&stid=KSLC&vars=relative_humidity
-apitimeend:  202101040804 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040803&stid=KSLC&vars=relative_humidity
+apitimeend:  202103040804 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040804&stid=KSLC&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040804&stid=KSLC&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KSLC_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KSLC_percentiles_wind_gust_set_1.csv
-apitimeend:  202101040808 
+apitimeend:  202103040808 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040808&stid=KSLC&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040808&stid=KSLC&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KSLC_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KSLC_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/KSLC_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -29,10 +29,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/KSLC_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040112 
+apitimeend:  202103040112 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040112&obtimezone=utc&stid=KSLC&vars=air_temp,relative_humidity,wind_speed
-[55.01 55.75 51.83 ... 80.49 80.49 81.63]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040112&obtimezone=utc&stid=KSLC&vars=air_temp,relative_humidity,wind_speed
+[55.01 55.75 51.83 ... 50.08 50.08 53.53]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -45,25 +45,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: KSLC --------------
 -----------Starting Station: UT5 --------------
 Station UT5 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101040945 
+apitimeend:  202103040944 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040945&stid=UT5&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040944&stid=UT5&vars=wind_speed
 Station UT5 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101040946 
+apitimeend:  202103040945 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040946&stid=UT5&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040945&stid=UT5&vars=wind_gust,peak_wind_speed
 Station UT5 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101040947 
+apitimeend:  202103040946 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040947&stid=UT5&vars=relative_humidity
-apitimeend:  202101040948 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040946&stid=UT5&vars=relative_humidity
+apitimeend:  202103040947 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040948&stid=UT5&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040947&stid=UT5&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT5_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT5_percentiles_wind_gust_set_1.csv
-apitimeend:  202101040951 
+apitimeend:  202103040949 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101040951&stid=UT5&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103040949&stid=UT5&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT5_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT5_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UT5_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -74,10 +74,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UT5_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040253 
+apitimeend:  202103040252 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040253&obtimezone=utc&stid=UT5&vars=air_temp,relative_humidity,wind_speed
-[39.  35.  36.  ... 81.4 80.4 80.5]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040252&obtimezone=utc&stid=UT5&vars=air_temp,relative_humidity,wind_speed
+[39.   35.   36.   ... 39.77 25.89 25.52]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -90,25 +90,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UT5 --------------
 -----------Starting Station: UT3 --------------
 Station UT3 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041032 
+apitimeend:  202103041032 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041032&stid=UT3&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041032&stid=UT3&vars=wind_speed
 Station UT3 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041033 
+apitimeend:  202103041033 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041033&stid=UT3&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041033&stid=UT3&vars=wind_gust,peak_wind_speed
 Station UT3 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041035 
+apitimeend:  202103041034 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041035&stid=UT3&vars=relative_humidity
-apitimeend:  202101041036 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041034&stid=UT3&vars=relative_humidity
+apitimeend:  202103041035 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041036&stid=UT3&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041035&stid=UT3&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT3_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT3_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041038 
+apitimeend:  202103041037 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041038&stid=UT3&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041037&stid=UT3&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT3_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT3_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UT3_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -119,10 +119,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UT3_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040340 
+apitimeend:  202103040339 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040340&obtimezone=utc&stid=UT3&vars=air_temp,relative_humidity,wind_speed
-[62.  52.  49.  ... 90.1 90.  90.1]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040339&obtimezone=utc&stid=UT3&vars=air_temp,relative_humidity,wind_speed
+[62.   52.   49.   ... 38.23 39.48 39.94]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -135,25 +135,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UT3 --------------
 -----------Starting Station: KIJ --------------
 Station KIJ VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041114 
+apitimeend:  202103041114 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041114&stid=KIJ&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041114&stid=KIJ&vars=wind_speed
 Station KIJ VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041115 
+apitimeend:  202103041115 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041115&stid=KIJ&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041115&stid=KIJ&vars=wind_gust,peak_wind_speed
 Station KIJ VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041116 
+apitimeend:  202103041116 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041116&stid=KIJ&vars=relative_humidity
-apitimeend:  202101041117 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041116&stid=KIJ&vars=relative_humidity
+apitimeend:  202103041116 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041117&stid=KIJ&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041116&stid=KIJ&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KIJ_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KIJ_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041118 
+apitimeend:  202103041118 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041118&stid=KIJ&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041118&stid=KIJ&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KIJ_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KIJ_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/KIJ_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -164,10 +164,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/KIJ_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040420 
+apitimeend:  202103040420 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040420&obtimezone=utc&stid=KIJ&vars=air_temp,relative_humidity,wind_speed
-[90.  91.  91.  ... 85.4 86.  85.2]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040420&obtimezone=utc&stid=KIJ&vars=air_temp,relative_humidity,wind_speed
+[90.   91.   91.   ... 42.83 40.62 41.6 ]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -180,25 +180,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: KIJ --------------
 -----------Starting Station: UTJUN --------------
 Station UTJUN VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041145 
+apitimeend:  202103041146 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041145&stid=UTJUN&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041146&stid=UTJUN&vars=wind_speed
 Station UTJUN VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041146 
+apitimeend:  202103041146 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041146&stid=UTJUN&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041146&stid=UTJUN&vars=wind_gust,peak_wind_speed
 Station UTJUN VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041146 
+apitimeend:  202103041147 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041146&stid=UTJUN&vars=relative_humidity
-apitimeend:  202101041146 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041147&stid=UTJUN&vars=relative_humidity
+apitimeend:  202103041147 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041146&stid=UTJUN&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041147&stid=UTJUN&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTJUN_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTJUN_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041148 
+apitimeend:  202103041148 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041148&stid=UTJUN&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041148&stid=UTJUN&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTJUN_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTJUN_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTJUN_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -209,10 +209,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTJUN_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040449 
+apitimeend:  202103040449 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040449&obtimezone=utc&stid=UTJUN&vars=air_temp,relative_humidity,wind_speed
-[22.71 22.5  22.37 ... 81.7  82.5  80.6 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040449&obtimezone=utc&stid=UTJUN&vars=air_temp,relative_humidity,wind_speed
+[22.71 22.5  22.37 ... 22.81 23.46 23.59]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -225,25 +225,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTJUN --------------
 -----------Starting Station: UTHEB --------------
 Station UTHEB VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041157 
+apitimeend:  202103041158 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041157&stid=UTHEB&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041158&stid=UTHEB&vars=wind_speed
 Station UTHEB VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041158 
+apitimeend:  202103041159 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041158&stid=UTHEB&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041159&stid=UTHEB&vars=wind_gust,peak_wind_speed
 Station UTHEB VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041158 
+apitimeend:  202103041159 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041158&stid=UTHEB&vars=relative_humidity
-apitimeend:  202101041159 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041159&stid=UTHEB&vars=relative_humidity
+apitimeend:  202103041200 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041159&stid=UTHEB&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041200&stid=UTHEB&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTHEB_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTHEB_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041201 
+apitimeend:  202103041202 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041201&stid=UTHEB&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041202&stid=UTHEB&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTHEB_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTHEB_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTHEB_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -254,10 +254,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTHEB_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040503 
+apitimeend:  202103040504 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040503&obtimezone=utc&stid=UTHEB&vars=air_temp,relative_humidity,wind_speed
-[67.27 65.82 65.21 ... 93.2  92.1  93.  ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040504&obtimezone=utc&stid=UTHEB&vars=air_temp,relative_humidity,wind_speed
+[67.27 65.82 65.21 ... 50.36 51.69 51.95]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -270,25 +270,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTHEB --------------
 -----------Starting Station: KHCR --------------
 Station KHCR VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041223 
+apitimeend:  202103041225 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041223&stid=KHCR&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041225&stid=KHCR&vars=wind_speed
 Station KHCR VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041224 
+apitimeend:  202103041226 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041224&stid=KHCR&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041226&stid=KHCR&vars=wind_gust,peak_wind_speed
 Station KHCR VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041224 
+apitimeend:  202103041226 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041224&stid=KHCR&vars=relative_humidity
-apitimeend:  202101041224 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041226&stid=KHCR&vars=relative_humidity
+apitimeend:  202103041226 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041224&stid=KHCR&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041226&stid=KHCR&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KHCR_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KHCR_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041225 
+apitimeend:  202103041227 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041225&stid=KHCR&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041227&stid=KHCR&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KHCR_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KHCR_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/KHCR_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -299,10 +299,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/KHCR_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040526 
+apitimeend:  202103040528 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040526&obtimezone=utc&stid=KHCR&vars=air_temp,relative_humidity,wind_speed
-[ 47.14  74.22  74.22 ... 100.   100.   100.  ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040528&obtimezone=utc&stid=KHCR&vars=air_temp,relative_humidity,wind_speed
+[47.14 74.22 74.22 ... 50.68 54.8  43.57]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -315,25 +315,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: KHCR --------------
 -----------Starting Station: PGRU1 --------------
 Station PGRU1 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041232 
+apitimeend:  202103041234 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041232&stid=PGRU1&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041234&stid=PGRU1&vars=wind_speed
 Station PGRU1 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041232 
+apitimeend:  202103041234 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041232&stid=PGRU1&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041234&stid=PGRU1&vars=wind_gust,peak_wind_speed
 Station PGRU1 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041232 
+apitimeend:  202103041235 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041232&stid=PGRU1&vars=relative_humidity
-apitimeend:  202101041233 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041235&stid=PGRU1&vars=relative_humidity
+apitimeend:  202103041235 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041233&stid=PGRU1&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041235&stid=PGRU1&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PGRU1_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PGRU1_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041233 
+apitimeend:  202103041236 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041233&stid=PGRU1&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041236&stid=PGRU1&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PGRU1_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PGRU1_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PGRU1_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -344,10 +344,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PGRU1_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040534 
+apitimeend:  202103040536 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040534&obtimezone=utc&stid=PGRU1&vars=air_temp,relative_humidity,wind_speed
-[ 54.  54.  54. ...  83.  99. 100.]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040536&obtimezone=utc&stid=PGRU1&vars=air_temp,relative_humidity,wind_speed
+[54. 54. 54. ... 17. 18. 19.]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -360,25 +360,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PGRU1 --------------
 -----------Starting Station: KCDC --------------
 Station KCDC VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041236 
+apitimeend:  202103041239 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041236&stid=KCDC&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041239&stid=KCDC&vars=wind_speed
 Station KCDC VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041238 
+apitimeend:  202103041241 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041238&stid=KCDC&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041241&stid=KCDC&vars=wind_gust,peak_wind_speed
 Station KCDC VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041239 
+apitimeend:  202103041242 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041239&stid=KCDC&vars=relative_humidity
-apitimeend:  202101041241 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041242&stid=KCDC&vars=relative_humidity
+apitimeend:  202103041244 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041241&stid=KCDC&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041244&stid=KCDC&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KCDC_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KCDC_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041245 
+apitimeend:  202103041248 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041245&stid=KCDC&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041248&stid=KCDC&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KCDC_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KCDC_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/KCDC_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -389,10 +389,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/KCDC_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040549 
+apitimeend:  202103040552 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040549&obtimezone=utc&stid=KCDC&vars=air_temp,relative_humidity,wind_speed
-[65.37 70.27 75.32 ... 74.66 74.66 74.03]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040552&obtimezone=utc&stid=KCDC&vars=air_temp,relative_humidity,wind_speed
+[65.37 70.27 75.32 ... 60.26 55.91 56.73]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -405,25 +405,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: KCDC --------------
 -----------Starting Station: UTBLK --------------
 Station UTBLK VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041421 
+apitimeend:  202103041423 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041421&stid=UTBLK&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041423&stid=UTBLK&vars=wind_speed
 Station UTBLK VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041422 
+apitimeend:  202103041424 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041422&stid=UTBLK&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041424&stid=UTBLK&vars=wind_gust,peak_wind_speed
 Station UTBLK VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041422 
+apitimeend:  202103041425 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041422&stid=UTBLK&vars=relative_humidity
-apitimeend:  202101041423 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041425&stid=UTBLK&vars=relative_humidity
+apitimeend:  202103041426 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041423&stid=UTBLK&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041426&stid=UTBLK&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTBLK_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTBLK_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041424 
+apitimeend:  202103041427 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041424&stid=UTBLK&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041427&stid=UTBLK&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTBLK_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTBLK_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTBLK_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -434,10 +434,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTBLK_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040726 
+apitimeend:  202103040729 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040726&obtimezone=utc&stid=UTBLK&vars=air_temp,relative_humidity,wind_speed
-[49.   50.   58.   ... 75.15 78.49 80.3 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040729&obtimezone=utc&stid=UTBLK&vars=air_temp,relative_humidity,wind_speed
+[49.  50.  58.  ... 97.2 97.8 98.5]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -450,25 +450,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTBLK --------------
 -----------Starting Station: BHCU1 --------------
 Station BHCU1 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041442 
+apitimeend:  202103041445 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041442&stid=BHCU1&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041445&stid=BHCU1&vars=wind_speed
 Station BHCU1 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041442 
+apitimeend:  202103041446 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041442&stid=BHCU1&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041446&stid=BHCU1&vars=wind_gust,peak_wind_speed
 Station BHCU1 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041443 
+apitimeend:  202103041446 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041443&stid=BHCU1&vars=relative_humidity
-apitimeend:  202101041443 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041446&stid=BHCU1&vars=relative_humidity
+apitimeend:  202103041447 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041443&stid=BHCU1&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041447&stid=BHCU1&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/BHCU1_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/BHCU1_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041445 
+apitimeend:  202103041448 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041445&stid=BHCU1&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041448&stid=BHCU1&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/BHCU1_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/BHCU1_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/BHCU1_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -479,10 +479,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/BHCU1_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040746 
+apitimeend:  202103040749 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040746&obtimezone=utc&stid=BHCU1&vars=air_temp,relative_humidity,wind_speed
-[  nan   nan   nan ... 64.28 64.99 66.11]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040749&obtimezone=utc&stid=BHCU1&vars=air_temp,relative_humidity,wind_speed
+[ nan  nan  nan ... 92.3 92.3 92.3]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -495,25 +495,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: BHCU1 --------------
 -----------Starting Station: LPRU1 --------------
 Station LPRU1 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041459 
+apitimeend:  202103041504 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041459&stid=LPRU1&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041504&stid=LPRU1&vars=wind_speed
 Station LPRU1 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041459 
+apitimeend:  202103041504 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041459&stid=LPRU1&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041504&stid=LPRU1&vars=wind_gust,peak_wind_speed
 Station LPRU1 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041500 
+apitimeend:  202103041504 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041500&stid=LPRU1&vars=relative_humidity
-apitimeend:  202101041500 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041504&stid=LPRU1&vars=relative_humidity
+apitimeend:  202103041505 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041500&stid=LPRU1&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041505&stid=LPRU1&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/LPRU1_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/LPRU1_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041501 
+apitimeend:  202103041505 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041501&stid=LPRU1&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041505&stid=LPRU1&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/LPRU1_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/LPRU1_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/LPRU1_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -524,10 +524,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/LPRU1_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040801 
+apitimeend:  202103040806 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040801&obtimezone=utc&stid=LPRU1&vars=air_temp,relative_humidity,wind_speed
-[78. nan 73. ... 77. 82. 82.]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040806&obtimezone=utc&stid=LPRU1&vars=air_temp,relative_humidity,wind_speed
+[78. nan 73. ... 95. 96. 95.]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -540,25 +540,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: LPRU1 --------------
 -----------Starting Station: UTLGP --------------
 Station UTLGP VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041504 
+apitimeend:  202103041509 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041504&stid=UTLGP&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041509&stid=UTLGP&vars=wind_speed
 Station UTLGP VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041505 
+apitimeend:  202103041510 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041505&stid=UTLGP&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041510&stid=UTLGP&vars=wind_gust,peak_wind_speed
 Station UTLGP VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041506 
+apitimeend:  202103041511 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041506&stid=UTLGP&vars=relative_humidity
-apitimeend:  202101041506 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041511&stid=UTLGP&vars=relative_humidity
+apitimeend:  202103041511 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041506&stid=UTLGP&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041511&stid=UTLGP&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTLGP_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTLGP_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041508 
+apitimeend:  202103041513 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041508&stid=UTLGP&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041513&stid=UTLGP&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTLGP_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTLGP_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTLGP_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -569,10 +569,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTLGP_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040810 
+apitimeend:  202103040815 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040810&obtimezone=utc&stid=UTLGP&vars=air_temp,relative_humidity,wind_speed
-[23.59 22.01 24.57 ... 95.7  95.4  95.2 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040815&obtimezone=utc&stid=UTLGP&vars=air_temp,relative_humidity,wind_speed
+[23.59 22.01 24.57 ... 77.78 73.59 71.12]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -585,25 +585,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTLGP --------------
 -----------Starting Station: BBN --------------
 Station BBN VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041528 
+apitimeend:  202103041534 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041528&stid=BBN&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041534&stid=BBN&vars=wind_speed
 Station BBN VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041529 
+apitimeend:  202103041535 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041529&stid=BBN&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041535&stid=BBN&vars=wind_gust,peak_wind_speed
 Station BBN VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041530 
+apitimeend:  202103041536 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041530&stid=BBN&vars=relative_humidity
-apitimeend:  202101041532 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041536&stid=BBN&vars=relative_humidity
+apitimeend:  202103041537 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041532&stid=BBN&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041537&stid=BBN&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/BBN_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/BBN_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041535 
+apitimeend:  202103041541 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041535&stid=BBN&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041541&stid=BBN&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/BBN_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/BBN_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/BBN_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -614,10 +614,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/BBN_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040838 
+apitimeend:  202103040844 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040838&obtimezone=utc&stid=BBN&vars=air_temp,relative_humidity,wind_speed
-[53. 60. 63. ... 84. 85. 85.]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040844&obtimezone=utc&stid=BBN&vars=air_temp,relative_humidity,wind_speed
+[53. 60. 63. ... 31. 32. 34.]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -630,25 +630,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: BBN --------------
 -----------Starting Station: KHIF --------------
 Station KHIF VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041637 
+apitimeend:  202103041645 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041637&stid=KHIF&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041645&stid=KHIF&vars=wind_speed
 Station KHIF VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041638 
+apitimeend:  202103041645 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041638&stid=KHIF&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041645&stid=KHIF&vars=wind_gust,peak_wind_speed
 Station KHIF VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041638 
+apitimeend:  202103041645 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041638&stid=KHIF&vars=relative_humidity
-apitimeend:  202101041638 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041645&stid=KHIF&vars=relative_humidity
+apitimeend:  202103041646 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041638&stid=KHIF&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041646&stid=KHIF&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KHIF_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KHIF_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041639 
+apitimeend:  202103041647 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041639&stid=KHIF&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041647&stid=KHIF&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KHIF_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/KHIF_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/KHIF_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -659,10 +659,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/KHIF_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040940 
+apitimeend:  202103040947 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040940&obtimezone=utc&stid=KHIF&vars=air_temp,relative_humidity,wind_speed
-[70.68 65.82 65.82 ... 97.09 97.1  94.99]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040947&obtimezone=utc&stid=KHIF&vars=air_temp,relative_humidity,wind_speed
+[70.68 65.82 65.82 ... 36.82 37.85 37.82]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -675,25 +675,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: KHIF --------------
 -----------Starting Station: PC010 --------------
 Station PC010 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041645 
+apitimeend:  202103041653 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041645&stid=PC010&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041653&stid=PC010&vars=wind_speed
 Station PC010 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041645 
+apitimeend:  202103041653 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041645&stid=PC010&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041653&stid=PC010&vars=wind_gust,peak_wind_speed
 Station PC010 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041645 
+apitimeend:  202103041653 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041645&stid=PC010&vars=relative_humidity
-apitimeend:  202101041646 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041653&stid=PC010&vars=relative_humidity
+apitimeend:  202103041653 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041646&stid=PC010&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041653&stid=PC010&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC010_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC010_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041646 
+apitimeend:  202103041653 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041646&stid=PC010&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041653&stid=PC010&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC010_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC010_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC010_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -704,10 +704,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC010_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040946 
+apitimeend:  202103040954 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040946&obtimezone=utc&stid=PC010&vars=air_temp,relative_humidity,wind_speed
-[50.19 50.27 51.31 ... 89.8  89.8  89.6 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040954&obtimezone=utc&stid=PC010&vars=air_temp,relative_humidity,wind_speed
+[50.19 50.27 51.31 ... 39.4  41.66 44.  ]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -720,25 +720,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC010 --------------
 -----------Starting Station: PC016 --------------
 Station PC016 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041647 
+apitimeend:  202103041654 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041647&stid=PC016&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041654&stid=PC016&vars=wind_speed
 Station PC016 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041647 
+apitimeend:  202103041655 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041647&stid=PC016&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041655&stid=PC016&vars=wind_gust,peak_wind_speed
 Station PC016 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041647 
+apitimeend:  202103041655 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041647&stid=PC016&vars=relative_humidity
-apitimeend:  202101041647 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041655&stid=PC016&vars=relative_humidity
+apitimeend:  202103041655 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041647&stid=PC016&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041655&stid=PC016&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC016_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC016_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041647 
+apitimeend:  202103041655 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041647&stid=PC016&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041655&stid=PC016&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC016_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC016_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC016_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -749,10 +749,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC016_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040948 
+apitimeend:  202103040955 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040948&obtimezone=utc&stid=PC016&vars=air_temp,relative_humidity,wind_speed
-[27.53 23.37 23.69 ... 65.09 68.5  77.33]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040955&obtimezone=utc&stid=PC016&vars=air_temp,relative_humidity,wind_speed
+[27.53 23.37 23.69 ... 92.   90.7  88.1 ]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -765,25 +765,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC016 --------------
 -----------Starting Station: PC018 --------------
 Station PC018 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041649 
+apitimeend:  202103041656 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041649&stid=PC018&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041656&stid=PC018&vars=wind_speed
 Station PC018 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041649 
+apitimeend:  202103041656 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041649&stid=PC018&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041656&stid=PC018&vars=wind_gust,peak_wind_speed
 Station PC018 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041649 
+apitimeend:  202103041657 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041649&stid=PC018&vars=relative_humidity
-apitimeend:  202101041649 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041657&stid=PC018&vars=relative_humidity
+apitimeend:  202103041657 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041649&stid=PC018&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041657&stid=PC018&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC018_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC018_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041649 
+apitimeend:  202103041657 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041649&stid=PC018&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041657&stid=PC018&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC018_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC018_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC018_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -794,10 +794,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC018_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040949 
+apitimeend:  202103040957 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040949&obtimezone=utc&stid=PC018&vars=air_temp,relative_humidity,wind_speed
-[27.41 27.01 26.06 ... 83.3  79.68 73.44]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040957&obtimezone=utc&stid=PC018&vars=air_temp,relative_humidity,wind_speed
+[27.41 27.01 26.06 ... 41.48 47.1  63.9 ]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -810,25 +810,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC018 --------------
 -----------Starting Station: PC021 --------------
 Station PC021 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041650 
+apitimeend:  202103041658 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041650&stid=PC021&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041658&stid=PC021&vars=wind_speed
 Station PC021 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041650 
+apitimeend:  202103041658 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041650&stid=PC021&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041658&stid=PC021&vars=wind_gust,peak_wind_speed
 Station PC021 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041650 
+apitimeend:  202103041658 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041650&stid=PC021&vars=relative_humidity
-apitimeend:  202101041650 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041658&stid=PC021&vars=relative_humidity
+apitimeend:  202103041659 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041650&stid=PC021&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041659&stid=PC021&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC021_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC021_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041651 
+apitimeend:  202103041659 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041651&stid=PC021&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041659&stid=PC021&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC021_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC021_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC021_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -839,9 +839,9 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC021_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040951 
+apitimeend:  202103040959 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040951&obtimezone=utc&stid=PC021&vars=air_temp,relative_humidity,wind_speed
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103040959&obtimezone=utc&stid=PC021&vars=air_temp,relative_humidity,wind_speed
 [ 30.86  29.79  29.26 ... 100.   100.   100.  ]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
@@ -857,25 +857,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC021 --------------
 -----------Starting Station: PC022 --------------
 Station PC022 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041651 
+apitimeend:  202103041659 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041651&stid=PC022&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041659&stid=PC022&vars=wind_speed
 Station PC022 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041651 
+apitimeend:  202103041700 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041651&stid=PC022&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041700&stid=PC022&vars=wind_gust,peak_wind_speed
 Station PC022 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041651 
+apitimeend:  202103041700 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041651&stid=PC022&vars=relative_humidity
-apitimeend:  202101041652 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041700&stid=PC022&vars=relative_humidity
+apitimeend:  202103041700 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041652&stid=PC022&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041700&stid=PC022&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC022_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC022_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041652 
+apitimeend:  202103041700 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041652&stid=PC022&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041700&stid=PC022&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC022_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC022_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC022_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -886,10 +886,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC022_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040952 
+apitimeend:  202103041000 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040952&obtimezone=utc&stid=PC022&vars=air_temp,relative_humidity,wind_speed
-[43.23 42.98 44.52 ... 87.5  87.2  86.9 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041000&obtimezone=utc&stid=PC022&vars=air_temp,relative_humidity,wind_speed
+[43.23 42.98 44.52 ... 36.04 37.55 39.56]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -902,25 +902,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC022 --------------
 -----------Starting Station: PC023 --------------
 Station PC023 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041653 
+apitimeend:  202103041701 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041653&stid=PC023&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041701&stid=PC023&vars=wind_speed
 Station PC023 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041653 
+apitimeend:  202103041701 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041653&stid=PC023&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041701&stid=PC023&vars=wind_gust,peak_wind_speed
 Station PC023 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041653 
+apitimeend:  202103041702 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041653&stid=PC023&vars=relative_humidity
-apitimeend:  202101041653 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041702&stid=PC023&vars=relative_humidity
+apitimeend:  202103041702 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041653&stid=PC023&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041702&stid=PC023&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC023_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC023_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041653 
+apitimeend:  202103041702 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041653&stid=PC023&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041702&stid=PC023&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC023_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC023_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC023_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -931,10 +931,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC023_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040954 
+apitimeend:  202103041002 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040954&obtimezone=utc&stid=PC023&vars=air_temp,relative_humidity,wind_speed
-[50.77 50.92 51.56 ... 95.   95.   95.  ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041002&obtimezone=utc&stid=PC023&vars=air_temp,relative_humidity,wind_speed
+[50.77 50.92 51.56 ... 53.49 50.75 60.48]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -947,25 +947,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC023 --------------
 -----------Starting Station: PC024 --------------
 Station PC024 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041655 
+apitimeend:  202103041703 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041655&stid=PC024&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041703&stid=PC024&vars=wind_speed
 Station PC024 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041655 
+apitimeend:  202103041703 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041655&stid=PC024&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041703&stid=PC024&vars=wind_gust,peak_wind_speed
 Station PC024 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041655 
+apitimeend:  202103041703 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041655&stid=PC024&vars=relative_humidity
-apitimeend:  202101041655 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041703&stid=PC024&vars=relative_humidity
+apitimeend:  202103041704 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041655&stid=PC024&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041704&stid=PC024&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC024_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC024_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041655 
+apitimeend:  202103041704 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041655&stid=PC024&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041704&stid=PC024&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC024_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC024_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC024_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -976,10 +976,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC024_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040955 
+apitimeend:  202103041004 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040955&obtimezone=utc&stid=PC024&vars=air_temp,relative_humidity,wind_speed
-[45.13 46.62 47.76 ... 97.6  97.1  95.9 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041004&obtimezone=utc&stid=PC024&vars=air_temp,relative_humidity,wind_speed
+[45.13 46.62 47.76 ... 46.82 50.8  50.17]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -992,25 +992,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC024 --------------
 -----------Starting Station: PC025 --------------
 Station PC025 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041656 
+apitimeend:  202103041705 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041656&stid=PC025&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041705&stid=PC025&vars=wind_speed
 Station PC025 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041656 
+apitimeend:  202103041705 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041656&stid=PC025&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041705&stid=PC025&vars=wind_gust,peak_wind_speed
 Station PC025 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041656 
+apitimeend:  202103041705 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041656&stid=PC025&vars=relative_humidity
-apitimeend:  202101041656 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041705&stid=PC025&vars=relative_humidity
+apitimeend:  202103041705 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041656&stid=PC025&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041705&stid=PC025&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC025_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC025_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041657 
+apitimeend:  202103041705 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041657&stid=PC025&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041705&stid=PC025&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC025_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC025_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC025_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1021,9 +1021,9 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC025_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040957 
+apitimeend:  202103041006 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040957&obtimezone=utc&stid=PC025&vars=air_temp,relative_humidity,wind_speed
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041006&obtimezone=utc&stid=PC025&vars=air_temp,relative_humidity,wind_speed
 [57.28 57.35 56.09 ... 67.12 68.19 67.4 ]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
@@ -1039,25 +1039,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC025 --------------
 -----------Starting Station: PC032 --------------
 Station PC032 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041657 
+apitimeend:  202103041706 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041657&stid=PC032&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041706&stid=PC032&vars=wind_speed
 Station PC032 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041657 
+apitimeend:  202103041706 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041657&stid=PC032&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041706&stid=PC032&vars=wind_gust,peak_wind_speed
 Station PC032 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041658 
+apitimeend:  202103041706 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041658&stid=PC032&vars=relative_humidity
-apitimeend:  202101041658 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041706&stid=PC032&vars=relative_humidity
+apitimeend:  202103041706 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041658&stid=PC032&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041706&stid=PC032&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC032_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC032_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041658 
+apitimeend:  202103041707 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041658&stid=PC032&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041707&stid=PC032&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC032_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC032_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC032_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1068,10 +1068,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC032_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040958 
+apitimeend:  202103041007 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040958&obtimezone=utc&stid=PC032&vars=air_temp,relative_humidity,wind_speed
-[92.1 93.6 93.4 ... 93.5 93.6 93.5]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041007&obtimezone=utc&stid=PC032&vars=air_temp,relative_humidity,wind_speed
+[92.1  93.6  93.4  ... 52.33 55.05 59.19]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1084,25 +1084,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC032 --------------
 -----------Starting Station: PC033 --------------
 Station PC033 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041659 
+apitimeend:  202103041708 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041659&stid=PC033&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041708&stid=PC033&vars=wind_speed
 Station PC033 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041659 
+apitimeend:  202103041708 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041659&stid=PC033&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041708&stid=PC033&vars=wind_gust,peak_wind_speed
 Station PC033 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041659 
+apitimeend:  202103041708 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041659&stid=PC033&vars=relative_humidity
-apitimeend:  202101041659 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041708&stid=PC033&vars=relative_humidity
+apitimeend:  202103041708 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041659&stid=PC033&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041708&stid=PC033&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC033_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC033_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041659 
+apitimeend:  202103041708 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041659&stid=PC033&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041708&stid=PC033&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC033_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC033_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC033_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1113,9 +1113,9 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC033_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101040959 
+apitimeend:  202103041008 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101040959&obtimezone=utc&stid=PC033&vars=air_temp,relative_humidity,wind_speed
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041008&obtimezone=utc&stid=PC033&vars=air_temp,relative_humidity,wind_speed
 [66.71 65.21 62.07 ... 47.74 50.   51.94]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
@@ -1131,25 +1131,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC033 --------------
 -----------Starting Station: PC034 --------------
 Station PC034 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041700 
+apitimeend:  202103041709 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041700&stid=PC034&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041709&stid=PC034&vars=wind_speed
 Station PC034 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041700 
+apitimeend:  202103041709 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041700&stid=PC034&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041709&stid=PC034&vars=wind_gust,peak_wind_speed
 Station PC034 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041700 
+apitimeend:  202103041709 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041700&stid=PC034&vars=relative_humidity
-apitimeend:  202101041700 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041709&stid=PC034&vars=relative_humidity
+apitimeend:  202103041709 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041700&stid=PC034&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041709&stid=PC034&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC034_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC034_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041700 
+apitimeend:  202103041709 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041700&stid=PC034&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041709&stid=PC034&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC034_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PC034_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PC034_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1160,10 +1160,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PC034_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041000 
+apitimeend:  202103041009 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041000&obtimezone=utc&stid=PC034&vars=air_temp,relative_humidity,wind_speed
-[75.76 74.11 73.4  ... 89.9  90.1  89.9 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041009&obtimezone=utc&stid=PC034&vars=air_temp,relative_humidity,wind_speed
+[75.76 74.11 73.4  ... 39.11 39.61 47.23]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1176,25 +1176,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PC034 --------------
 -----------Starting Station: UTSTR --------------
 Station UTSTR VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041701 
+apitimeend:  202103041710 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041701&stid=UTSTR&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041710&stid=UTSTR&vars=wind_speed
 Station UTSTR VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041701 
+apitimeend:  202103041710 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041701&stid=UTSTR&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041710&stid=UTSTR&vars=wind_gust,peak_wind_speed
 Station UTSTR VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041702 
+apitimeend:  202103041711 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041702&stid=UTSTR&vars=relative_humidity
-apitimeend:  202101041702 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041711&stid=UTSTR&vars=relative_humidity
+apitimeend:  202103041711 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041702&stid=UTSTR&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041711&stid=UTSTR&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTSTR_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTSTR_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041703 
+apitimeend:  202103041712 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041703&stid=UTSTR&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041712&stid=UTSTR&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTSTR_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTSTR_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTSTR_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1205,10 +1205,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTSTR_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041004 
+apitimeend:  202103041013 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041004&obtimezone=utc&stid=UTSTR&vars=air_temp,relative_humidity,wind_speed
-[34.82 33.43 31.87 ... 67.51 67.58 67.38]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041013&obtimezone=utc&stid=UTSTR&vars=air_temp,relative_humidity,wind_speed
+[34.82 33.43 31.87 ... 48.01 48.24 48.93]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1221,25 +1221,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTSTR --------------
 -----------Starting Station: UTPLC --------------
 Station UTPLC VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041710 
+apitimeend:  202103041719 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041710&stid=UTPLC&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041719&stid=UTPLC&vars=wind_speed
 Station UTPLC VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041710 
+apitimeend:  202103041719 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041710&stid=UTPLC&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041719&stid=UTPLC&vars=wind_gust,peak_wind_speed
 Station UTPLC VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041711 
+apitimeend:  202103041720 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041711&stid=UTPLC&vars=relative_humidity
-apitimeend:  202101041711 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041720&stid=UTPLC&vars=relative_humidity
+apitimeend:  202103041720 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041711&stid=UTPLC&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041720&stid=UTPLC&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTPLC_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTPLC_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041712 
+apitimeend:  202103041721 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041712&stid=UTPLC&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041721&stid=UTPLC&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTPLC_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTPLC_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTPLC_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1250,10 +1250,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTPLC_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041013 
+apitimeend:  202103041022 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041013&obtimezone=utc&stid=UTPLC&vars=air_temp,relative_humidity,wind_speed
-[84.8  83.8  86.2  ... 80.4  79.85 77.14]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041022&obtimezone=utc&stid=UTPLC&vars=air_temp,relative_humidity,wind_speed
+[84.8  83.8  86.2  ... 62.84 64.34 61.99]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1266,25 +1266,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTPLC --------------
 -----------Starting Station: UTMFS --------------
 Station UTMFS VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041719 
+apitimeend:  202103041728 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041719&stid=UTMFS&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041728&stid=UTMFS&vars=wind_speed
 Station UTMFS VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041720 
+apitimeend:  202103041729 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041720&stid=UTMFS&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041729&stid=UTMFS&vars=wind_gust,peak_wind_speed
 Station UTMFS VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041720 
+apitimeend:  202103041730 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041720&stid=UTMFS&vars=relative_humidity
-apitimeend:  202101041721 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041730&stid=UTMFS&vars=relative_humidity
+apitimeend:  202103041731 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041721&stid=UTMFS&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041731&stid=UTMFS&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTMFS_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTMFS_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041723 
+apitimeend:  202103041733 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041723&stid=UTMFS&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041733&stid=UTMFS&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTMFS_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTMFS_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTMFS_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1295,10 +1295,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTMFS_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041025 
+apitimeend:  202103041035 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041025&obtimezone=utc&stid=UTMFS&vars=air_temp,relative_humidity,wind_speed
-[86.9 85.7 85.1 ... 91.6 91.5 91.4]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041035&obtimezone=utc&stid=UTMFS&vars=air_temp,relative_humidity,wind_speed
+[86.9  85.7  85.1  ... 70.82 63.14 59.36]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1311,25 +1311,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTMFS --------------
 -----------Starting Station: UTASG --------------
 Station UTASG VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041745 
+apitimeend:  202103041756 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041745&stid=UTASG&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041756&stid=UTASG&vars=wind_speed
 Station UTASG VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041746 
+apitimeend:  202103041756 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041746&stid=UTASG&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041756&stid=UTASG&vars=wind_gust,peak_wind_speed
 Station UTASG VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041746 
+apitimeend:  202103041757 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041746&stid=UTASG&vars=relative_humidity
-apitimeend:  202101041747 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041757&stid=UTASG&vars=relative_humidity
+apitimeend:  202103041758 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041747&stid=UTASG&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041758&stid=UTASG&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTASG_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTASG_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041748 
+apitimeend:  202103041759 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041748&stid=UTASG&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041759&stid=UTASG&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTASG_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTASG_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTASG_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1340,10 +1340,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTASG_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041050 
+apitimeend:  202103041100 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041050&obtimezone=utc&stid=UTASG&vars=air_temp,relative_humidity,wind_speed
-[64.68 57.8  57.32 ... 90.5  90.2  90.1 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041100&obtimezone=utc&stid=UTASG&vars=air_temp,relative_humidity,wind_speed
+[64.68 57.8  57.32 ... 60.54 62.63 66.68]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1356,25 +1356,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTASG --------------
 -----------Starting Station: SND --------------
 Station SND VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041801 
+apitimeend:  202103041812 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041801&stid=SND&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041812&stid=SND&vars=wind_speed
 Station SND VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041802 
+apitimeend:  202103041813 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041802&stid=SND&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041813&stid=SND&vars=wind_gust,peak_wind_speed
 Station SND VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041802 
+apitimeend:  202103041814 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041802&stid=SND&vars=relative_humidity
-apitimeend:  202101041803 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041814&stid=SND&vars=relative_humidity
+apitimeend:  202103041815 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041803&stid=SND&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041815&stid=SND&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/SND_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/SND_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041805 
+apitimeend:  202103041817 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041805&stid=SND&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041817&stid=SND&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/SND_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/SND_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/SND_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1385,10 +1385,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/SND_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041107 
+apitimeend:  202103041118 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041107&obtimezone=utc&stid=SND&vars=air_temp,relative_humidity,wind_speed
-[ nan  nan  nan ... 97.7 97.7 97.7]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041118&obtimezone=utc&stid=SND&vars=air_temp,relative_humidity,wind_speed
+[  nan   nan   nan ... 74.14 81.9  89.3 ]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1401,25 +1401,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: SND --------------
 -----------Starting Station: PCPD --------------
 Station PCPD VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041828 
+apitimeend:  202103041840 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041828&stid=PCPD&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041840&stid=PCPD&vars=wind_speed
 Station PCPD VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041828 
+apitimeend:  202103041841 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041828&stid=PCPD&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041841&stid=PCPD&vars=wind_gust,peak_wind_speed
 Station PCPD VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041829 
+apitimeend:  202103041841 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041829&stid=PCPD&vars=relative_humidity
-apitimeend:  202101041829 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041841&stid=PCPD&vars=relative_humidity
+apitimeend:  202103041841 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041829&stid=PCPD&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041841&stid=PCPD&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PCPD_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PCPD_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041830 
+apitimeend:  202103041842 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041830&stid=PCPD&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041842&stid=PCPD&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PCPD_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/PCPD_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/PCPD_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1430,9 +1430,9 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/PCPD_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041131 
+apitimeend:  202103041144 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041131&obtimezone=utc&stid=PCPD&vars=air_temp,relative_humidity,wind_speed
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041144&obtimezone=utc&stid=PCPD&vars=air_temp,relative_humidity,wind_speed
 [64.92 64.91 65.77 ...   nan   nan   nan]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
@@ -1446,25 +1446,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: PCPD --------------
 -----------Starting Station: UTPCY --------------
 Station UTPCY VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041839 
+apitimeend:  202103041851 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041839&stid=UTPCY&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041851&stid=UTPCY&vars=wind_speed
 Station UTPCY VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041839 
+apitimeend:  202103041852 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041839&stid=UTPCY&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041852&stid=UTPCY&vars=wind_gust,peak_wind_speed
 Station UTPCY VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041840 
+apitimeend:  202103041852 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041840&stid=UTPCY&vars=relative_humidity
-apitimeend:  202101041840 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041852&stid=UTPCY&vars=relative_humidity
+apitimeend:  202103041853 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041840&stid=UTPCY&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041853&stid=UTPCY&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTPCY_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTPCY_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041842 
+apitimeend:  202103041855 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041842&stid=UTPCY&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041855&stid=UTPCY&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTPCY_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTPCY_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTPCY_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1475,10 +1475,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTPCY_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041144 
+apitimeend:  202103041157 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041144&obtimezone=utc&stid=UTPCY&vars=air_temp,relative_humidity,wind_speed
-[70.96 69.2  69.51 ... 83.9  85.6  84.7 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041157&obtimezone=utc&stid=UTPCY&vars=air_temp,relative_humidity,wind_speed
+[70.96 69.2  69.51 ... 65.03 69.91 76.17]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1491,25 +1491,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTPCY --------------
 -----------Starting Station: HERUT --------------
 Station HERUT VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041900 
+apitimeend:  202103041913 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041900&stid=HERUT&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041913&stid=HERUT&vars=wind_speed
 Station HERUT VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041901 
+apitimeend:  202103041914 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041901&stid=HERUT&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041914&stid=HERUT&vars=wind_gust,peak_wind_speed
 Station HERUT VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041901 
+apitimeend:  202103041915 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041901&stid=HERUT&vars=relative_humidity
-apitimeend:  202101041902 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041915&stid=HERUT&vars=relative_humidity
+apitimeend:  202103041915 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041902&stid=HERUT&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041915&stid=HERUT&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/HERUT_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/HERUT_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041903 
+apitimeend:  202103041917 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041903&stid=HERUT&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041917&stid=HERUT&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/HERUT_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/HERUT_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/HERUT_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1520,10 +1520,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/HERUT_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041205 
+apitimeend:  202103041218 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041205&obtimezone=utc&stid=HERUT&vars=air_temp,relative_humidity,wind_speed
-[  nan   nan 26.88 ... 77.   79.4  77.1 ]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041218&obtimezone=utc&stid=HERUT&vars=air_temp,relative_humidity,wind_speed
+[  nan   nan 26.88 ... 39.21 39.33 39.77]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1536,25 +1536,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: HERUT --------------
 -----------Starting Station: P056C --------------
 Station P056C VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041919 
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P056C&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P056C&vars=wind_speed
 Station P056C VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041919 
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P056C&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P056C&vars=wind_gust,peak_wind_speed
 Station P056C VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041919 
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P056C&vars=relative_humidity
-apitimeend:  202101041919 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P056C&vars=relative_humidity
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P056C&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P056C&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/P056C_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/P056C_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041919 
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P056C&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P056C&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/P056C_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/P056C_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/P056C_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1565,9 +1565,9 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/P056C_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041219 
+apitimeend:  202103041233 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041219&obtimezone=utc&stid=P056C&vars=air_temp,relative_humidity,wind_speed
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041233&obtimezone=utc&stid=P056C&vars=air_temp,relative_humidity,wind_speed
 [22. 18. 14. ... 57. 52. 49.]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
@@ -1583,25 +1583,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: P056C --------------
 -----------Starting Station: P057C --------------
 Station P057C VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041919 
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P057C&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P057C&vars=wind_speed
 Station P057C VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041919 
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P057C&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P057C&vars=wind_gust,peak_wind_speed
 Station P057C VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041919 
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P057C&vars=relative_humidity
-apitimeend:  202101041919 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P057C&vars=relative_humidity
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P057C&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P057C&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/P057C_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/P057C_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041919 
+apitimeend:  202103041933 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=P057C&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041933&stid=P057C&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/P057C_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/P057C_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/P057C_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1612,9 +1612,9 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/P057C_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041219 
+apitimeend:  202103041233 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041219&obtimezone=utc&stid=P057C&vars=air_temp,relative_humidity,wind_speed
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041233&obtimezone=utc&stid=P057C&vars=air_temp,relative_humidity,wind_speed
 [22. 18. 18. ... 56. 54. 50.]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
@@ -1630,25 +1630,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: P057C --------------
 -----------Starting Station: UTSVC --------------
 Station UTSVC VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041919 
+apitimeend:  202103041934 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041919&stid=UTSVC&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041934&stid=UTSVC&vars=wind_speed
 Station UTSVC VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041920 
+apitimeend:  202103041934 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041920&stid=UTSVC&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041934&stid=UTSVC&vars=wind_gust,peak_wind_speed
 Station UTSVC VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041921 
+apitimeend:  202103041935 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041921&stid=UTSVC&vars=relative_humidity
-apitimeend:  202101041922 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041935&stid=UTSVC&vars=relative_humidity
+apitimeend:  202103041936 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041922&stid=UTSVC&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041936&stid=UTSVC&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTSVC_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTSVC_percentiles_wind_gust_set_1.csv
-apitimeend:  202101041924 
+apitimeend:  202103041938 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041924&stid=UTSVC&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103041938&stid=UTSVC&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTSVC_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UTSVC_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UTSVC_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1659,10 +1659,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UTSVC_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041226 
+apitimeend:  202103041240 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041226&obtimezone=utc&stid=UTSVC&vars=air_temp,relative_humidity,wind_speed
-[91.  91.  91.  ... 92.8 93.  92.7]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041240&obtimezone=utc&stid=UTSVC&vars=air_temp,relative_humidity,wind_speed
+[91.   91.   91.   ... 72.63 68.67 70.57]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1675,25 +1675,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: UTSVC --------------
 -----------Starting Station: MTMET --------------
 Station MTMET VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101041948 
+apitimeend:  202103042003 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041948&stid=MTMET&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103042003&stid=MTMET&vars=wind_speed
 Station MTMET VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101041950 
+apitimeend:  202103042005 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041950&stid=MTMET&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103042005&stid=MTMET&vars=wind_gust,peak_wind_speed
 Station MTMET VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101041953 
+apitimeend:  202103042008 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041953&stid=MTMET&vars=relative_humidity
-apitimeend:  202101041955 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103042008&stid=MTMET&vars=relative_humidity
+apitimeend:  202103042011 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101041955&stid=MTMET&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103042011&stid=MTMET&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/MTMET_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/MTMET_percentiles_wind_gust_set_1.csv
-apitimeend:  202101042001 
+apitimeend:  202103042017 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101042001&stid=MTMET&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103042017&stid=MTMET&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/MTMET_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/MTMET_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/MTMET_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1704,10 +1704,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/MTMET_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041307 
+apitimeend:  202103041323 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041307&obtimezone=utc&stid=MTMET&vars=air_temp,relative_humidity,wind_speed
-[  nan   nan   nan ... 69.66 70.14 70.96]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041323&obtimezone=utc&stid=MTMET&vars=air_temp,relative_humidity,wind_speed
+[  nan   nan   nan ... 51.06 52.81 53.01]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
@@ -1720,25 +1720,25 @@ Moving on to save the file:  /uufs/chpc.utah.edu/common/home/u1269218/public_htm
 -----------Done With Station: MTMET --------------
 -----------Starting Station: UT9 --------------
 Station UT9 VAR wind_speed_set_1 THRESH 20 A CONSECUTIVE HRS 6
-apitimeend:  202101050006 
+apitimeend:  202103050016 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101050006&stid=UT9&vars=wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103050016&stid=UT9&vars=wind_speed
 Station UT9 VAR wind_gust_set_1 THRESH 25.8 A CONSECUTIVE HRS 6
-apitimeend:  202101050007 
+apitimeend:  202103050017 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101050007&stid=UT9&vars=wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103050017&stid=UT9&vars=wind_gust,peak_wind_speed
 Station UT9 VAR relative_humidity_set_1 THRESH 30 B CONSECUTIVE HRS 6
-apitimeend:  202101050009 
+apitimeend:  202103050018 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101050009&stid=UT9&vars=relative_humidity
-apitimeend:  202101050010 
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103050018&stid=UT9&vars=relative_humidity
+apitimeend:  202103050019 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101050010&stid=UT9&vars=wind_speed,wind_gust,peak_wind_speed
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103050019&stid=UT9&vars=wind_speed,wind_gust,peak_wind_speed
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT9_percentiles_wind_speed_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT9_percentiles_wind_gust_set_1.csv
-apitimeend:  202101050013 
+apitimeend:  202103050023 
 
-http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202101050013&stid=UT9&vars=air_temp,relative_humidity
+http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph&start=199701010000&end=202103050023&stid=UT9&vars=air_temp,relative_humidity
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT9_percentiles_air_temp_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/percentiles/UT9_percentiles_relative_humidity_set_1.csv
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/dataFiles/station_occurances/UT9_consec_6_occurence_dailycount_A20_wind_speed_set_1.csv
@@ -1749,10 +1749,10 @@ http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/pngFiles/stationClimatologicalPics/UT9_consec_6_occurence_dailycount_B30_relative_humidity_set_1.png
 /uufs/chpc.utah.edu/common/home/u1269218/public_html/RMP/scriptsAndData/james_Python_Scripts/FFWI_getData.py:140: RuntimeWarning: Mean of empty slice
   running6FFWI.append(np.nanmean(FFWI[startIndex:i]))
-apitimeend:  202101041716 
+apitimeend:  202103041726 
 
-now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202101041716&obtimezone=utc&stid=UT9&vars=air_temp,relative_humidity,wind_speed
-[37.  36.  40.  ... 90.7 90.1 89.2]
+now calling the api:  http://api.synopticdata.com/v2/stations/timeseries?token=c03c614370e24a89a2f73d2e2cd80fa8&units=english,speed|mph,temp|f&start=199701010000&end=202103041726&obtimezone=utc&stid=UT9&vars=air_temp,relative_humidity,wind_speed
+[37.   36.   40.   ... 62.06 63.35 60.75]
 Computing the FFWI for each data point
 Now starting to compute the 6Hr mean...
     This takes a while....
